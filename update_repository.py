@@ -6,7 +6,7 @@ from os.path import *
 
 FILE_PATHS = [
     expanduser(file_path.strip())
-    for file_path in open('configurations').readlines()
+    for file_path in open('files_to_save').readlines()
 ]
 
 
@@ -28,9 +28,9 @@ def attempt_to_copy(file_path):
 def actually_copy(file_path):
     base_name = basename(file_path)
     source = file_path
-    destination = REPOSITORY_DIRECTORY + base_name
+    destination = REPOSITORY_DIRECTORY + 'configurations/' + base_name
     arguments = [source, destination]
-    if isfile(file_path):
+    if isfile(source):
         _copy_file(*arguments)
     else:
         _copy_directory(*arguments)
