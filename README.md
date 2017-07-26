@@ -2,19 +2,11 @@
 
 A collection of configuration files for various programs I use.
 
-## Installation
+## Installation (from repo to PC)
 
-```
-(repository ---[configs]---> yourComputer)
-```
+Copy the contents of the `configuration` directory into your home directory.
 
-* Copy the contents of the `configuration` directory into your home directory.
-
-## Synchronisation
-
-```
-(repository <---[configs]--- yourComputer)
-```
+## Synchronisation (from PC to Repo)
 
 To bring the repository up-to-date with your current configurations, run:
 
