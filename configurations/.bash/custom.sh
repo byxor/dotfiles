@@ -1,9 +1,7 @@
-
 if [ -n "$DISPLAY" ]; then
   xset b off
-  fi
+fi
 
-alias sus="systemctl suspend"
 
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=$HOME/installers/go
@@ -20,17 +18,11 @@ parse_git_branch() {
 	         export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 function pydir {
-    mkdir $1
-        touch $1/__init__.py
-	}
-
-alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  mkdir $1
+  touch $1/__init__.py
+}
 
 export GTEST_DIR=$HOME/installers/googletest-release-1.8.0/googletest
 
 export PATH=$PATH:$HOME/installers/leiningen
-
-alias venv="source venv/bin/activate"
-
-alias emacs="emacs -nw "
 

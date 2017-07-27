@@ -1,4 +1,5 @@
-source $HOME/.bash/defaults
-source $HOME/.bash/custom
-source $HOME/.bash/capslock_for_tmux
+source $HOME/.bash/defaults.sh
+source $HOME/.bash/capslock_for_tmux.sh
+source $HOME/.bash/aliases.sh
+source $HOME/.bash/custom.sh
 
