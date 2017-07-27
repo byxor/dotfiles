@@ -33,3 +33,5 @@ Here are some I can think of:
 
 * Your configuration files will be installed into your home directory (cross-platform, I believe).
 * You have python installed (for running the synchronisation script).
+
+My configuration files are heavily dependent on linux, but this should only be a problem if you want to use my configuration files on a non-linux OS.
