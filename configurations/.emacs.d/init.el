@@ -1,3 +1,5 @@
+(load-file "./arista-loader.el")
+
 (column-number-mode 1)
 (show-paren-mode 1)
 (ido-mode 1)
