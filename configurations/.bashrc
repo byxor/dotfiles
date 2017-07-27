@@ -1,11 +1,14 @@
 function import {
+    BASH_DIRECTORY=$HOME/.bash
     echo Importing $1...
-    source $1
+    source $BASH_DIRECTORY/$1
 }
 
+
 echo "Loading .bashrc"
-import $HOME/.bash/defaults.sh
-import $HOME/.bash/capslock_for_tmux.sh
-import $HOME/.bash/aliases.sh
-import $HOME/.bash/custom.sh
+import defaults.sh
+import capslock_for_tmux.sh
+import aliases.sh
+import custom.sh
+import git.sh
 echo "done."
