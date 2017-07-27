@@ -31,7 +31,5 @@ Currently, some assumptions are baked into the code. Rather than being silent ab
 
 Here are some I can think of:
 
-* You're running linux.
-* Your configuration files will be installed into your home directory.
-* You're using bash as your primary shell.
+* Your configuration files will be installed into your home directory (cross-platform, I believe).
 * You have python installed (for running the synchronisation script).
