@@ -1,34 +1,39 @@
+(defun attempt-load-library (library)
+  (if (not (equal (locate-library library) nil))
+      (load-library library)
+    (message "Library '%s' not found. Skipping..." library)))
+ 
 ;; Makes TAB do the right thing for various languages.
-(load-library "arastra-indent")
+(attempt-load-library "arastra-indent")
 
 ;; Integration with a4, for checking files out and for
 ;; compiling/running/debugging within emacs.
-(load-library "a4")
+(attempt-load-library "a4")
 
 ;; Makes C-v and M-v do what they should, rather than what Stallman wanted;
 ;; specifically, makes C-v and M-v inverses of each other so pressing one
 ;; and then the other is always a no-op.
 (if (featurep 'xemacs)
-    (load-library "scroll-in-place"))
+    (attempt-load-library "scroll-in-place"))
 
 ;; Makes M-k switch to a recently used buffer, with lightning
 ;; completion.  Wrapper for iswitchb
-(load-library "nifty-buffer")
+(attempt-load-library "nifty-buffer")
 
 ;; Gives you "C-x f" to find file at point.  Useful for jumping to
 ;; errors, etc.
-(load-library "nifty-file")
+(attempt-load-library "nifty-file")
 
 ;; Gives you C-z and M-z for running shells inside emacs.  Emacs is good
 ;; for you.
-(load-library "ashell")
+(attempt-load-library "ashell")
 
 ;; Gives you M-e and M-r for sane defining and running of keyboard
 ;; macros.
-(load-library "keyboard-macros")
+(attempt-load-library "keyboard-macros")
 
 ;; Some little useful functions like C-ct for a timestamp
-(load-library "arastra-utils")
+(attempt-load-library "arastra-utils")
 
 ;; Dynamic completion of words with Meta-return
 (autoload 'dabbrev-expand "dabbrev" "Expand previous word \"dynamically\".")
@@ -40,10 +45,10 @@
 (autoload 'colorize "colorize" "Supporting for coloring regions" t)
 
 ;; Other improvements (IMO) over default emacs keybindings.
-(load-library "misc-bindings")
+(attempt-load-library "misc-bindings")
 
 ;; Arista gid extensions
-(load-library "a4-gid")
+(attempt-load-library "a4-gid")
 
 ;; Have gnuclient always use the same frame if not running in X
 ;; emacsclient does this by default.
@@ -51,7 +56,8 @@
     (if (eq (frame-type) 'tty)
         (setq gnuserv-frame t)))
 
-(require 'aformat-mode)
+;; Not sure what this does
+;; (require 'aformat-mode)
 
 ;; Disable fsync
 (setq write-region-inhibit-fsync t)
@@ -61,5 +67,14 @@
           'python-pdbtrack-comint-output-filter-function)
 
 ;; Golang support.
-(load-library "go-mode")
+(attempt-load-library "go-mode")
 (add-hook 'before-save-hook 'gofmt-before-save)
+
+
+
+
+
+
+
+
+
