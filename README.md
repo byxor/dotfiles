@@ -20,3 +20,13 @@ $ python3 update_repository.py
 ```
 
 This will back-up everything listed in `files_to_save` into the repository's `configurations` directory.
+
+## Assumptions
+
+Currently, some assumptions are baked into the code. Rather than being silent about them, I will list them here; they might affect you.
+
+Here are some I can think of:
+
+* You're running linux.
+* Your configuration files will be installed into your home directory.
+* You're using bash as your primary shell.
