@@ -8,4 +8,5 @@ alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 
 alias pf="passflip"
 
-alias cfg="cd ~/projects/configurations"
+alias proj="cd ~/projects"
+alias conf="cd ~/projects/configurations"
