@@ -12,7 +12,8 @@ Copy the contents of the `configuration` directory into your home directory.
 
 e.g.
 ```
-$ cp -af repositoryRoot/configurations ~
+$ cd respository_root/configurations
+$ cp -af . ~
 ```
 
 ## Synchronisation (from PC to Repo)
