@@ -1,3 +1,9 @@
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+    *) return;;
+esac
+
 function import {
     BASH_DIRECTORY=$HOME/.bash
     echo Importing $1...
