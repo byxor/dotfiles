@@ -24,10 +24,10 @@ function pydir {
 
 function hardreset {
     NEWLINES=300
-    for _ in {1..NEWLINES}
-    do
+    for _ in $(seq $NEWLINES); do
         echo
     done
+    reset
 }
 
 export GTEST_DIR=$HOME/installers/googletest-release-1.8.0/googletest
