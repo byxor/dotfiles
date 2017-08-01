@@ -20,4 +20,5 @@ import functions.sh
 import capslock_for_tmux.sh
 import git.sh
 import git_shell_prompt.sh
+import setup_emacs_backups.sh
 echo "done."
