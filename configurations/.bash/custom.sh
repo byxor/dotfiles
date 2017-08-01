@@ -22,6 +22,14 @@ function pydir {
   touch $1/__init__.py
 }
 
+function hardreset {
+    NEWLINES=300
+    for _ in {1..NEWLINES}
+    do
+        echo
+    done
+}
+
 export GTEST_DIR=$HOME/installers/googletest-release-1.8.0/googletest
 
 export PATH=$PATH:$HOME/installers/leiningen
