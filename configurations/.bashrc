@@ -1,4 +1,5 @@
-# If not running interactively, don't do anything
+# If not running interactively, exit.
+# This fixes issues with the `scp` command.
 case $- in
     *i*) ;;
     *) return;;
@@ -13,8 +14,10 @@ function import {
 
 echo "Loading .bashrc"
 import defaults.sh
-import capslock_for_tmux.sh
+import exports.sh
 import aliases.sh
-import custom.sh
+import functions.sh
+import capslock_for_tmux.sh
 import git.sh
+import git_shell_prompt.sh
 echo "done."

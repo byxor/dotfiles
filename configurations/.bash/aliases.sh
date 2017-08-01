@@ -10,3 +10,4 @@ alias pf="passflip"
 
 alias proj="cd ~/projects"
 alias conf="cd ~/projects/configurations"
+
