@@ -28,3 +28,11 @@ function dut-release-all {
     local grabbed_duts=$(Art grabbed)
     echo "$grabbed_duts" | xargs Art release
 }
+
+function dut-ssh {
+    Art ssh -u root
+}
+
+function dut-cli {
+    Art attach
+}
