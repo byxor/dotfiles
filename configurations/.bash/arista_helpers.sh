@@ -19,6 +19,11 @@ function dut-random-grab {
     Art grab $dut_name
 }
 
+function dut-random-grab-sanitize {
+    dut-random-grab $1
+    Art sanitize
+}
+
 function dut-release-all {
     local grabbed_duts=$(Art grabbed)
     echo "$grabbed_duts" | xargs Art release
