@@ -36,3 +36,7 @@ function dut-ssh {
 function dut-cli {
     Art attach
 }
+
+function dut {
+    Art grabbed
+}
