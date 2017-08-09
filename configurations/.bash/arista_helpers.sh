@@ -24,9 +24,13 @@ function dut-random-grab-sanitize {
     Art sanitize
 }
 
+function dut-release {
+    Art release $@
+}
+
 function dut-release-all {
     local grabbed_duts=$(Art grabbed)
-    echo "$grabbed_duts" | xargs Art release
+    echo "$grabbed_duts" | xargs dut-release
 }
 
 function dut-ssh {
