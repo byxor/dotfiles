@@ -6,7 +6,7 @@ function Art {
     else
         command Art $@
     fi
-} 
+}
 
 function dut-list {
     local available=$(Art list | grep \<free\>)
@@ -74,6 +74,22 @@ function dut {
         local full_dut=$(duts)
         local dut=${full_dut:start:maximum_length}
         echo $dut
+    else
+        echo "This command only works with 1 dut grabbed."
+    fi
+}
+
+function dut-upload {
+    if [ $(dut-number) -eq 1 ]
+    then
+        if ! [ -z "$1" ]
+        then
+            local source=$1
+            local destination=$(dut):/tmp/$(basename $source)
+            Art scp $source $destination
+        else
+            echo "Please provide a path to the file."
+        fi
     else
         echo "This command only works with 1 dut grabbed."
     fi
