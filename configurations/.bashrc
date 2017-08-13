@@ -22,4 +22,5 @@ import git.sh
 import git_shell_prompt.sh
 import setup_emacs_backups.sh
 import arista_helpers.sh
+import sudo_warning.sh
 echo "done."
