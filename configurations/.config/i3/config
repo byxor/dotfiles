@@ -32,6 +32,11 @@ bindsym $MOD+a focus parent
 bindsym $MOD+h split h
 bindsym $MOD+v split v
 
+### SCREENSHOT OPTIONS ###
+set $SCREENSHOT_CODE ~/.bash/.screenshot
+bindsym $MOD+bracketleft  exec $SCREENSHOT_CODE/_screen.sh
+bindsym $MOD+bracketright exec $SCREENSHOT_CODE/_region.sh
+
 ### MOVEMENT OPTIONS ###
 bindsym $MOD+$DIRECTION_LEFT  focus left
 bindsym $MOD+$DIRECTION_RIGHT focus right
@@ -93,3 +98,5 @@ bindsym XF86AudioMute exec $volumepath/volume -m -n -t $statuscmd -u $statussig
 bindsym $MOD+Shift+period exec $volumepath/volume -i $volumestep -n -t $statuscmd -u $statussig
 bindsym $MOD+Shift+comma exec $volumepath/volume -d $volumestep -n -t $statuscmd -u $statussig
 bindsym $MOD+Shift+slash exec $volumepath/volume -m -n -t $statuscmd -u $statussig
+
+

@@ -145,3 +145,7 @@ function container-last {
         echo "There is no known 'last container'."
     fi
 }
+
+function project-addpackage {
+    a4 project branchpackage $1
+}
