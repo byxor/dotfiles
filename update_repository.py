@@ -4,31 +4,40 @@ from shutil import *
 from os.path import *
 
 
-FILE_PATHS = [
-    expanduser(file_path.strip())
-    for file_path in open('files_to_save').readlines()
-]
+def get_file_paths():
+    lines = open('files_to_save').readlines()
+    sources_and_relative_destinations = []
+    for line in lines:
+        words = line.split(' ')
+        source = expanduser(words[0])
+        if len(words) == 2:
+            relative_destination = expanduser(words[1])
+        else:
+            relative_destination = source
+        sources_and_relative_destinations.append((source, relative_destination))
+    return sources_and_relative_destinations
+
+
+FILE_PATHS = get_file_paths()
 
 
 REPOSITORY_DIRECTORY = dirname(sys.modules[__name__].__file__)
 
 
 def main():
-    for file_path in FILE_PATHS:
-        attempt_to_copy(file_path)
+    for source, relative_destination in FILE_PATHS:
+        attempt_to_copy(source, relative_destination)
 
 
-def attempt_to_copy(file_path):
-    if exists(file_path):
-        actually_copy(file_path)
+def attempt_to_copy(source, relative_destination):
+    if exists(source):
+        actually_copy(source, relative_destination)
     else:
-        print("'{}' does not exist. Skipping...".format(file_path))
+        print("'{}' does not exist. Skipping...".format(source))
 
 
-def actually_copy(file_path):
-    base_name = basename(file_path)
-    source = file_path
-    destination = REPOSITORY_DIRECTORY + 'configurations/' + base_name
+def actually_copy(source, relative_destination):
+    destination = REPOSITORY_DIRECTORY + 'configurations/' + relative_destination
     arguments = [source, destination]
     if isfile(source):
         _copy_file(*arguments)
