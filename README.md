@@ -25,7 +25,7 @@ This will back-up everything listed in `files_to_save` into the repository's `co
 You can also provide an optional description of the configuration changes, for example:
 
 ```bash
-$ make apply_local message="Update emacs hotkeys"
+$ make apply_local message='"Update emacs hotkeys"'
 ```
 
 ## Assumptions
