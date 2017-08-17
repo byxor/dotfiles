@@ -6,22 +6,18 @@ You can fork this repository and use it as manager for _your own_ configuration 
 
 Just empty the `configurations` folder and modify the `files_to_save` file with whatever you want to synchronise.
 
-## Installation (from repo to PC)
+## Applying changes from remote repository to PC
 
-Copy the contents of the `configuration` directory into your home directory.
-
-e.g.
-```
-$ cd respository_root/configurations
-$ cp -af . ~
+```bash
+$ make apply_remote
 ```
 
-## Synchronisation (from PC to Repo)
+## Applying local changes to remote repository
 
 To bring the repository up-to-date with your current configurations, run:
 
 ```bash
-$ python3 update_repository.py
+$ make apply_local
 ```
 
 This will back-up everything listed in `files_to_save` into the repository's `configurations` directory.
