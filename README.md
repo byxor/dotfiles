@@ -22,6 +22,12 @@ $ make apply_local
 
 This will back-up everything listed in `files_to_save` into the repository's `configurations` directory.
 
+You can also provide an optional description of the configuration changes, for example:
+
+```bash
+$ make apply_local message="Update emacs hotkeys"
+```
+
 ## Assumptions
 
 Currently, some assumptions are baked into the code. Rather than being silent about them, I will list them here; they might affect you.
