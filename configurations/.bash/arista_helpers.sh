@@ -1,3 +1,5 @@
+import string_utils.sh
+
 function Art {
     if [[ $1 == "grab" ]]; then
         command Art $@ --ignorePanics
