@@ -5,10 +5,20 @@ case $- in
     *) return;;
 esac
 
+_IMPORTED_MODULES=''
+
 function import {
     BASH_DIRECTORY=$HOME/.bash
-    echo Importing $1...
-    source $BASH_DIRECTORY/$1
+    local module=$1
+    if [[ $_IMPORTED_MODULES != *$module* ]]
+    then
+	echo Importing $module...
+	source $BASH_DIRECTORY/$module
+	_IMPORTED_MODULES+=" "
+	_IMPORTED_MODULES+="$module"
+    else
+	echo Already imported $module...
+    fi
 }
 
 
