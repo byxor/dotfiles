@@ -1,6 +1,6 @@
 .PHONY: apply_local apply_remote
 
-message = '"Add new configuration changes"'
+message = 'Add new configuration changes'
 
 apply_local:
 	python update_repository.py
