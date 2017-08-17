@@ -50,5 +50,5 @@ function split {
 }
 
 function pfxc {
-    pf $@ | sed $!d | xclip -selection clipboard
+    pf $@ | sed '$!d' | xclip -selection clipboard
 }
