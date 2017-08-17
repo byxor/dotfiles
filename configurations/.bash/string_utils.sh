@@ -1,19 +1,3 @@
-function pydir {
-    mkdir $1
-    touch $1/__init__.py
-}
-
-function hardreset {
-    local new_lines=300
-    for _ in $(seq $new_lines); do
-        echo
-    done
-}
-
-function rm {
-    echo "This command is very dangerous. Please use 'trash' instead. I know it's annoying, but you'll thank me later. I promise."
-}
-
 function strip {
     local input=$1
 
@@ -47,8 +31,4 @@ function split {
 	done <<< "$string"
         echo $part
     fi
-}
-
-function pfxc {
-    pf $@ | sed '$!d' | xclip -selection clipboard
 }
