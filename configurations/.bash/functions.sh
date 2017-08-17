@@ -8,7 +8,6 @@ function hardreset {
     for _ in $(seq $new_lines); do
         echo
     done
-    reset
 }
 
 function rm {
@@ -48,4 +47,8 @@ function split {
 	done <<< "$string"
         echo $part
     fi
+}
+
+function pfxc {
+    pf $@ | sed $!d | xclip -selection clipboard
 }
