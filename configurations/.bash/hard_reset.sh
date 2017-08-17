@@ -3,5 +3,6 @@ function hardreset {
     for _ in $(seq $new_lines); do
         echo
     done
+    reset
 }
 
