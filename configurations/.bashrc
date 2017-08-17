@@ -20,6 +20,7 @@ import string_utils.sh
 import hard_reset.sh
 import capslock_for_tmux.sh
 import git_settings.sh
+import git_helpers.sh
 import git_shell_prompt.sh
 import setup_emacs_backups.sh
 import arista_helpers.sh
@@ -27,5 +28,5 @@ import sudo_warning.sh
 import rm_warning.sh
 import python_helpers.sh
 import passflip_helpers.sh
-import screenshot.sh
+import screenshot_helpers.sh
 echo "done."
