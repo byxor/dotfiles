@@ -1,0 +1,2 @@
+#chmod u+x $("$(module_directorbbbby)")/_screen.sh
+#chmod u+x $("$(module_directory)")/_region.sh
