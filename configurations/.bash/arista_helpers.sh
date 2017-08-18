@@ -131,8 +131,8 @@ function __container-last-get {
 function container {
     if ! [ -z "$1" ]
     then
-       __container-last-set $1
-       a4c shell $1
+	__container-last-set $1
+	a4c shell $1
     else
         echo "Please provide a value for the container."
     fi
@@ -150,4 +150,23 @@ function container-last {
 
 function project-addpackage {
     a4 project branchpackage $1
+}
+
+function userserver {
+    if ! [ -z "$1" ]
+    then
+	local identifier=$1
+	if ! [ -z "$2" ]
+	then
+	    local username=$2
+	else
+	    local username="brandon.ibbotson"
+	fi
+	local hostname=us$identifier
+	ssh $username@$hostname
+    else
+        echo "Please provide a value for the container."
+    fi
+    
+    
 }
