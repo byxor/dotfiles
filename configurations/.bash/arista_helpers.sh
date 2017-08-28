@@ -1,5 +1,7 @@
 import string_utils.sh
 
+ARISTA_USERNAME="brandon.ibbotson"
+
 function Art {
     if [[ $1 == "grab" ]]; then
         command Art $@ --ignorePanics
@@ -148,6 +150,15 @@ function container-last {
     fi
 }
 
+function container-new {
+    if ! [ -z "$1" ]
+    then
+	a4c create -c -p $ARISTA_USERNAME.$1.0 eos-trunk
+    else
+        echo "Please provide a name for the container."
+    fi
+}
+
 function project-addpackage {
     a4 project branchpackage $1
 }
@@ -160,7 +171,7 @@ function userserver {
 	then
 	    local username=$2
 	else
-	    local username="brandon.ibbotson"
+	    local username=$ARISTA_USERNAME
 	fi
 	local hostname=us$identifier
 	ssh $username@$hostname
