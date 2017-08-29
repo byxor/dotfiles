@@ -4,7 +4,7 @@ THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
 message = 'Miscellaneous commit'
 
-sync:
+__sync:
 	# Get latest changes in master
 	git checkout master
 	git pull
@@ -24,10 +24,10 @@ sync:
 	git branch -d temporary
 
 apply_local:
-	@$(MAKE) -f $(THIS_FILE) sync
+	@$(MAKE) -f $(THIS_FILE) __sync
 	git push
 
 apply_remote:
-	@$(MAKE) -f $(THIS_FILE) sync
+	@$(MAKE) -f $(THIS_FILE) __sync
 	cd configurations
 	cp -af . ~
