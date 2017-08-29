@@ -30,7 +30,7 @@ apply_remote:
 	git pull
 
 	# Create temporary branch
-	if git show-ref --quiet refs/heads/temporary; then; git branch -d temporary; fi
+	if git show-ref --quiet refs/heads/temporary; then git branch -d temporary; fi
 	git checkout -b temporary
 
 	# Apply local changes to temporary branch
