@@ -2,7 +2,7 @@
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
-message = 'Add new configuration changes'
+message = 'Miscellaneous commit'
 
 sync:
 	# Get latest changes in master
@@ -28,7 +28,6 @@ apply_local:
 	git push
 
 apply_remote:
-	message = "Apply remote files to local repository temporarily"
 	@$(MAKE) -f $(THIS_FILE) sync
 	cd configurations
 	cp -af . ~
