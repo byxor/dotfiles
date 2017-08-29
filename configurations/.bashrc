@@ -28,6 +28,7 @@ import exports.sh
 import aliases.sh
 import suppress_bell.sh
 import string_utils.sh
+import default_text_editor.sh
 import hard_reset.sh
 import capslock_for_tmux.sh
 import git_settings.sh
