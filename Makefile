@@ -1,8 +1,21 @@
 .PHONY: sync apply_local apply_remote
 
+
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
+
+apply_local:
+	@$(MAKE) -f $(THIS_FILE) __sync
+	git push
+
+apply_remote:
+	@$(MAKE) -f $(THIS_FILE) __sync
+	cd configurations
+	cp -af . ~
+
+
 message = 'Miscellaneous commit'
+
 
 __sync:
 	# Get latest changes in master
@@ -22,12 +35,3 @@ __sync:
 	git checkout master
 	git merge temporary
 	git branch -d temporary
-
-apply_local:
-	@$(MAKE) -f $(THIS_FILE) __sync
-	git push
-
-apply_remote:
-	@$(MAKE) -f $(THIS_FILE) __sync
-	cd configurations
-	cp -af . ~
