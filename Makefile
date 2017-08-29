@@ -1,8 +1,10 @@
-.PHONY: apply_local apply_remote
+.PHONY: sync apply_local apply_remote
+
+THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
 message = 'Add new configuration changes'
 
-apply_local:
+sync:
 	# Get latest changes in master
 	git checkout master
 	git pull
@@ -21,28 +23,12 @@ apply_local:
 	git merge temporary
 	git branch -d temporary
 
-	# Push master to origin
+apply_local:
+	@$(MAKE) -f $(THIS_FILE) sync
 	git push
 
 apply_remote:
-	# Get latest changes in master
-	git checkout master
-	git pull
-
-	# Create temporary branch
-	if git show-ref --quiet refs/heads/temporary; then git branch -d temporary; fi
-	git checkout -b temporary
-
-	# Apply local changes to temporary branch
-	python update_repository.py
-	git add configurations
-	git commit -am "Apply remote files to local repository temporarily"
-
-	# Merge temporary branch into master
-	git checkout master
-	git merge temporary
-	git branch -d temporary
-
-	# Copy the files to local machine
+	message = "Apply remote files to local repository temporarily"
+	@$(MAKE) -f $(THIS_FILE) sync
 	cd configurations
 	cp -af . ~
