@@ -1,8 +1,9 @@
-.PHONY: sync apply_local apply_remote
-
+.PHONY: sync apply_local apply_remote clean_local
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
-
+COMMIT_MESSAGE = 'Miscellaneous commit'
+MASTER_BRANCH = 'master'
+TEMPORARY_BRANCH = 'temporary'
 
 apply_local:
 	@$(MAKE) -f $(THIS_FILE) __sync
@@ -10,28 +11,31 @@ apply_local:
 
 apply_remote:
 	@$(MAKE) -f $(THIS_FILE) __sync
-	cd configurations
-	cp -af . ~
+	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
-
-message = 'Miscellaneous commit'
-
+clean_local:
+	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
 __sync:
 	# Get latest changes in master
-	git checkout master
+	git checkout $(MASTER_BRANCH)
 	git pull
 
 	# Create temporary branch
-	if git show-ref --quiet refs/heads/temporary; then git branch -d temporary; fi
-	git checkout -b temporary
+	if git show-ref --quiet refs/heads/$(TEMPORARY_BRANCH); then git branch -d $(TEMPORARY_BRANCH); fi
+	git checkout -b $(TEMPORARY_BRANCH)
 
 	# Apply local changes to temporary branch
 	python update_repository.py
 	git add configurations
-	git commit -am $(message)
+	git commit -am $(COMMIT_MESSAGE)
 
 	# Merge temporary branch into master
-	git checkout master
-	git merge temporary
-	git branch -d temporary
+	git checkout $(MASTER_BRANCH)
+	git merge $(TEMPORARY_BRANCH)
+	git branch -d $(TEMPORARY_BRANCH)
+
+__overwrite_local_configurations:
+	cd configurations
+	cp -af . ~
+	cd ..
