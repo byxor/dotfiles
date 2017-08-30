@@ -1,9 +1,10 @@
 .PHONY: sync apply_local apply_remote clean_local
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
-COMMIT_MESSAGE = 'Miscellaneous commit'
 MASTER_BRANCH = 'master'
 TEMPORARY_BRANCH = 'temporary'
+m = 'Miscellaneous commit'
+COMMIT_MESSAGE = m
 
 apply_local:
 	@$(MAKE) -f $(THIS_FILE) __sync
