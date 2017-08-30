@@ -36,6 +36,4 @@ __sync:
 	git branch -d $(TEMPORARY_BRANCH)
 
 __overwrite_local_configurations:
-	cd configurations
-	cp -af . ~
-	cd ..
+	cd configurations; cp -af . ~
