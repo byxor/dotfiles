@@ -6,8 +6,8 @@ THIS_FILE := $(lastword $(MAKEFILE_LIST))
 MASTER_BRANCH = 'master'
 TEMPORARY_BRANCH = 'temporary'
 
-m = 'Miscellaneous commit'
-COMMIT_MESSAGE = $m
+m = Miscellaneous commit
+COMMIT_MESSAGE = '$m'
 
 
 apply_local:
