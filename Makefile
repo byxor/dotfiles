@@ -29,12 +29,10 @@ apply_local:
 # An optional commit message can be specified, for example:
 #
 # ```
-# make {{target}} m="'Modify bashrc contents'"
+# make {{target}} m="Modify bashrc contents"
 # ```
 #
 # # Notes:
-#
-# * It's often necessary to use both types of quotes for commit messages. This ensures that globbing is correctly accounted for.
 #
 # * If your local changes conflict with any new ones from upstream, you
 #   can resolve the conflicts with git.
