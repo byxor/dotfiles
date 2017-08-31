@@ -182,18 +182,18 @@ function userserver {
 }
 
 function edit {
-    if ! [ "$#" -ge 2 ]
+    if [ "$#" -ge 2 ]
     then
         local package=$1
         local file_path=$2
         local full_file_path=/src/$package/$file_path
-        if ! [ -z "$3" ]
+        if ! [ -z "$3" ] && [ "$3" == "-v" ]
         then
-            if [ "$3" -eq "-v" ]
-            then
-                a4 project branchpackage $package
-                a4 edit $full_file_path
-            fi
+            echo "Opening file for viewing..."
+        else
+            echo "Branching file onto client..."
+            a4 project branchpackage $package
+            a4 edit $full_file_path
         fi
         $EDITOR $full_file_path
     else
