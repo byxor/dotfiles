@@ -182,11 +182,20 @@ function userserver {
 }
 
 function edit {
-    if ! [ "$#" -ne 2 ]
+    if ! [ "$#" -ge 2 ]
     then
         local package=$1
         local file_path=$2
-        $EDITOR /src/$package/$file_path
+        local full_file_path=/src/$package/$file_path
+        if ! [ -z "$3" ]
+        then
+            if [ "$3" -eq "-v" ]
+            then
+                a4 project branchpackage $package
+                a4 edit $full_file_path
+            fi
+        fi
+        $EDITOR $full_file_path
     else
         echo "Please provide a package and a file path. (e.g. Strata AgentSm.tin)"
     fi
