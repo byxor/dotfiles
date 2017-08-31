@@ -1,4 +1,5 @@
 import string_utils.sh
+import default_text_editor.sh
 
 ARISTA_USERNAME="brandon.ibbotson"
 
@@ -178,6 +179,15 @@ function userserver {
     else
         echo "Please provide a value for the container."
     fi
-    
-    
+}
+
+function edit {
+    if ! [ "$#" -ne 2 ]
+    then
+        local package=$1
+        local file_path=$2
+        $EDITOR /src/$package/$file_path
+    else
+        echo "Please provide a package and a file path. (e.g. Strata AgentSm.tin)"
+    fi
 }
