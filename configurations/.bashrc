@@ -1,4 +1,5 @@
-# If not running interactively, exit.
+
+        # If not running interactively, exit.
 # This fixes issues with the `scp` command.
 case $- in
     *i*) ;;
@@ -28,6 +29,7 @@ import exports.sh
 import aliases.sh
 import suppress_bell.sh
 import default_text_editor.sh
+import debug_utils.sh
 import string_utils.sh
 import hard_reset.sh
 import capslock_for_tmux.sh
