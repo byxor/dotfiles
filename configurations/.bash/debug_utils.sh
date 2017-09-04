@@ -1,5 +1,7 @@
 ERROR_DIRECTORY=~/.debug_output
-mkdir ~/.debug_output
+
+
+mkdir ~/.debug_output &> /dev/null
 
 
 function debug {
@@ -10,7 +12,7 @@ function debug {
         local output=$ERROR_DIRECTORY/${description}_out.log
         time (${@:2} 2> $error 1> $output)
     else
-        echo "Usage: 'debug <description> <command>"
+        echo "Usage: 'debug <description> <command>'"
         echo " e.g.: debug overflow_bug python foo.py"
     fi
 }
