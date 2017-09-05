@@ -14,13 +14,13 @@ apply_local:
 #
 # Use this when you want to save some changes you've made locally.
 #
-# ### What it does:
+# #### What it does:
 # 
 # * Copies all local configuration files into the repository.
 # * Syncs them with the latest configuration files from the server.
 # * Pushes the new changes to the server.
 #
-# ### Usage:
+# #### Usage:
 #
 # ```
 # make {{target}}
@@ -32,7 +32,7 @@ apply_local:
 # make {{target}} m="Modify bashrc contents"
 # ```
 #
-# ### Notes:
+# #### Notes:
 #
 # * If your local changes conflict with any new ones from upstream, you
 #   can resolve the conflicts with git.
@@ -41,13 +41,45 @@ apply_local:
 	git push
 
 apply_remote:
+#
+# Use this to fetch the latest changes from the internet.
+#
+# ```
+# make {{target}}
+# ```
+#
+# #### What it does:
+# * Fetches latest changes from server.
+# * Syncs them with any local changes.
+# * Copies the latest files to your local machine.
+#
 	@$(MAKE) -f $(THIS_FILE) __sync
 	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
 update_tools:
+#
+# Use this to obtain updates to the repository without
+# overwriting or updating any local changes.
+#
+# ```
+# make {{target}}
+# ```
+#
 	git pull
 
 clean_local:
+#
+# Use this to overwrite any local changes with the contents
+# of the repository. This will not fetch any new changes
+# from the server.
+#
+# ```
+# make {{target}}
+# ```
+#
+# #### What it does:
+# * Overwrites local configurations with those from repository.
+#
 	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
 __sync:
