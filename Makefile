@@ -60,7 +60,7 @@ __sync:
 	git checkout -b $(TEMPORARY_BRANCH)
 
 	# Apply local changes to temporary branch
-	python update_repository.py
+	python tools/update_repository.py
 	git add configurations
 	git commit -am $(COMMIT_MESSAGE)
 
