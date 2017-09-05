@@ -17,13 +17,13 @@ Just empty the `configurations` folder and modify the `files_to_save` file with 
 
 Use this when you want to save some changes you've made locally.
 
-# What it does:
+### What it does:
 
 * Copies all local configuration files into the repository.
 * Syncs them with the latest configuration files from the server.
 * Pushes the new changes to the server.
 
-# Usage:
+### Usage:
 
 ```
 make {{target}}
@@ -35,7 +35,7 @@ An optional commit message can be specified, for example:
 make {{target}} m="Modify bashrc contents"
 ```
 
-# Notes:
+### Notes:
 
 * If your local changes conflict with any new ones from upstream, you
   can resolve the conflicts with git.
