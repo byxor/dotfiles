@@ -6,35 +6,47 @@ You can fork this repository and use it as manager for _your own_ configuration 
 
 Just empty the `configurations` folder and modify the `files_to_save` file with whatever you want to synchronise.
 
-## Applying changes from remote repository to PC
+# Makefile targets
 
-```bash
-$ make apply_remote
+## THIS_FILE
+
+
+
+## apply_local
+
+
+Use this when you want to save some changes you've made locally.
+
+# What it does:
+
+* Copies all local configuration files into the repository.
+* Syncs them with the latest configuration files from the server.
+* Pushes the new changes to the server.
+
+# Usage:
+
+```
+make {{target}}
 ```
 
-## Applying local changes to remote repository
+An optional commit message can be specified, for example:
 
-To bring the repository up-to-date with your current configurations, run:
-
-```bash
-$ make apply_local
+```
+make {{target}} m="Modify bashrc contents"
 ```
 
-This will back-up everything listed in `files_to_save` into the repository's `configurations` directory.
+# Notes:
 
-You can also provide an optional description of the configuration changes, for example:
+* If your local changes conflict with any new ones from upstream, you
+  can resolve the conflicts with git.
 
-```bash
-$ make apply_local message='"Update emacs hotkeys"'
-```
 
-## Assumptions
+## apply_remote
 
-Currently, some assumptions are baked into the code. Rather than being silent about them, I will list them here; they might affect you.
 
-Here are some I can think of:
 
-* Your configuration files will be installed into your home directory (cross-platform, I believe).
-* You have python installed (for running the synchronisation script).
+## update_tools
 
-My configuration files are heavily dependent on linux, but this should only be a problem if you want to use my configuration files on a non-linux OS.
+
+
+## clean_local
