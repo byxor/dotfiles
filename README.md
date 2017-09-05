@@ -6,9 +6,9 @@ You can fork this repository and use it as manager for _your own_ configuration 
 
 Just empty the `configurations` folder and modify the `files_to_save` file with whatever you want to synchronise.
 
-# Makefile targets
+## Makefile targets
 
-## apply_local
+### apply_local
 
 
 Use this when you want to save some changes you've made locally.
@@ -37,12 +37,12 @@ make apply_local m="Modify bashrc contents"
   can resolve the conflicts with git.
 
 
-## apply_remote
+### apply_remote
 
 
 
-## update_tools
+### update_tools
 
 
 
-## clean_local
+### clean_local

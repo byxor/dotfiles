@@ -17,7 +17,7 @@ TARGET_TEMPLATE = '{{target}}'
 
 def generate_documentation_for(makefile):
     targets = scrape_targets_from(makefile)
-    documentation = _paragraph(_header(1, "Makefile targets"))
+    documentation = _paragraph(_header(2, "Makefile targets"))
     documentation += ''.join([_target_documentation(makefile, target) for target in targets])
     return documentation.strip() + _line()
 
@@ -50,7 +50,7 @@ def _header(amount, text):
 
 def _target_documentation(makefile, target):
     docstring = fetch_docstring_for(makefile, target)
-    documentation = _paragraph(_header(2, target.name))
+    documentation = _paragraph(_header(3, target.name))
     documentation += _paragraph(docstring)
     return documentation
 

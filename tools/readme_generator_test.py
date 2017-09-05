@@ -93,46 +93,46 @@ class MakefileInteractionTest(unittest.TestCase):
         data = [
             (MAKEFILES[0], \
              """\
-             # Makefile targets
+             ## Makefile targets
 
-             ## compile
+             ### compile
 
              This is a
              sample docstring
 
-             ## clean
+             ### clean
 
              delete junk files
              """),
             (MAKEFILES[1], \
              """\
-             # Makefile targets
+             ## Makefile targets
 
-             ## foo
+             ### foo
 
              do foo stuff:
 
-             ## bar
+             ### bar
 
              do bar stuff:
 
-             ## baz
+             ### baz
 
              do baz stuff:
              """),
             (MAKEFILES[2], \
              """\
-             # Makefile targets
+             ## Makefile targets
 
-             ## cat
+             ### cat
 
              doc_cat
 
-             ## catt
+             ### catt
 
              doc_catt
 
-             ## cattt
+             ### cattt
 
              doc_cattt
              """)
