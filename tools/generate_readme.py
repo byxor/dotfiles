@@ -11,6 +11,7 @@ COMMENT = '#'
 HEADER = '#'
 PRIVATE = '__'
 PHONY = '.PHONY'
+ASSIGNMENT = ':='
 
 
 def generate_documentation_for(makefile):
@@ -25,7 +26,8 @@ def scrape_targets_from(makefile):
     lines =                  [Line(*temp) for temp in zip(range(len(raw_lines)), raw_lines)]
     colon_lines =            [line for line in lines if TARGET_SPECIFIER in line.contents]
     non_comment_lines =      [line for line in colon_lines if line.contents.strip()[0] != COMMENT]
-    potential_target_lines = [Line(line.number, line.contents.split(':')[0]) for line in non_comment_lines]
+    non_variable_lines =     [line for line in non_comment_lines if ASSIGNMENT not in line.contents]
+    potential_target_lines = [Line(line.number, line.contents.split(':')[0]) for line in non_variable_lines]
     potential_target_lines = [line for line in potential_target_lines if not line.contents.startswith(PHONY)]
     target_lines =           [line for line in potential_target_lines if not line.contents.startswith(' ')]
     targets =                [Target(line.number, line.contents.strip()) for line in target_lines]

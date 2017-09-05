@@ -5,7 +5,7 @@ from generate_readme import *
 
 MAKEFILES = [ \
 """
-VARIABLE = 1000
+VARIABLE := 1000
 
 compile:
 # This is a

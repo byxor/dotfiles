@@ -8,10 +8,6 @@ Just empty the `configurations` folder and modify the `files_to_save` file with 
 
 # Makefile targets
 
-## THIS_FILE
-
-
-
 ## apply_local
 
 
