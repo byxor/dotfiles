@@ -22,13 +22,13 @@ Use this when you want to save some changes you've made locally.
 ### Usage:
 
 ```
-make {{target}}
+make apply_local
 ```
 
 An optional commit message can be specified, for example:
 
 ```
-make {{target}} m="Modify bashrc contents"
+make apply_local m="Modify bashrc contents"
 ```
 
 ### Notes:
