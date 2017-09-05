@@ -77,8 +77,6 @@ clean_local:
 # make {{target}}
 # ```
 #
-# #### What it does:
-# * Overwrites local configurations with those from repository.
 #
 	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 

@@ -73,6 +73,3 @@ from the server.
 ```
 make clean_local
 ```
-
-#### What it does:
-* Overwrites local configurations with those from repository.
