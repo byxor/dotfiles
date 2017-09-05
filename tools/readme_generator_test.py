@@ -27,13 +27,13 @@ __sync:
 .PHONY: foo bar baz
 
 foo: x y
-# do foo stuff:
+# do {{target}} stuff:
 
 bar: a b
-# do bar stuff:
+# do {{target}} stuff:
 
 baz: 1 2
-# do baz stuff:
+# do {{target}} stuff:
 """, \
 """
 cat:

@@ -12,6 +12,7 @@ HEADER = '#'
 PRIVATE = '__'
 PHONY = '.PHONY'
 ASSIGNMENT = ':='
+TARGET_TEMPLATE = '{{target}}'
 
 
 def generate_documentation_for(makefile):
@@ -59,7 +60,8 @@ def fetch_docstring_for(makefile, target):
     start = target.line_number + 1
     end = _get_comment_end_index(raw_lines, start)
     docstring_lines = [line[2:] for line in raw_lines[start:end]]
-    return NEWLINE.join(docstring_lines)
+    templated_docstring_lines = [line.replace(TARGET_TEMPLATE, target.name) for line in docstring_lines]
+    return NEWLINE.join(templated_docstring_lines)
     
 
 def _get_comment_end_index(raw_lines, start_index):
