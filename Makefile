@@ -61,7 +61,7 @@ __sync:
 
 	# Apply local changes to temporary branch
 	python tools/update_repository.py
-	git add configurations
+	git add .
 	git commit -am $(COMMIT_MESSAGE)
 
 	# Merge temporary branch into main branch
