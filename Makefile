@@ -77,10 +77,14 @@ clean_local:
 # make {{target}}
 # ```
 #
-#
 	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
 __sync:
+	# Get the latest tools before syncing
+	@$(MAKE) -f $(THIS_FILE) update_tools
+	@$(MAKE) -f $(THIS_FILE) __perform_sync
+
+__perform_sync:
 	# Get latest changes from origin
 	git checkout $(MASTER_BRANCH)
 	git pull
