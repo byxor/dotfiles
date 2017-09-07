@@ -65,7 +65,7 @@ update_tools:
 # make {{target}}
 # ```
 #
-	git pull
+	@$(MAKE) -f $(THIS_FILE) __get_latest_changes
 
 clean_local:
 #
@@ -79,15 +79,17 @@ clean_local:
 #
 	@$(MAKE) -f $(THIS_FILE) __overwrite_local_configurations
 
+__get_latest_changes:
+	git checkout $(MASTER_BRANCH)
+	git pull
+
 __sync:
 	# Get the latest tools before syncing
 	@$(MAKE) -f $(THIS_FILE) update_tools
 	@$(MAKE) -f $(THIS_FILE) __perform_sync
 
 __perform_sync:
-	# Get latest changes from origin
-	git checkout $(MASTER_BRANCH)
-	git pull
+	@$(MAKE) -f $(THIS_FILE) __get_latest_changes
 
 	# Create temporary branch
 	if git show-ref --quiet refs/heads/$(TEMPORARY_BRANCH); then git branch -d $(TEMPORARY_BRANCH); fi
