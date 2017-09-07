@@ -38,6 +38,11 @@ function dut-random-grab-sanitize {
     Art sanitize
 }
 
+function dut-random-grab-sanitize-update {
+    dut-random-grab-sanitise $@
+    Art update
+}
+
 function dut-release {
     Art release $@
 }
