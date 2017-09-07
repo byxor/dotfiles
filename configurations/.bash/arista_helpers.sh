@@ -39,7 +39,7 @@ function dut-random-grab-sanitize {
 }
 
 function dut-random-grab-sanitize-update {
-    dut-random-grab-sanitise $@
+    dut-random-grab-sanitize $@
     Art update
 }
 
