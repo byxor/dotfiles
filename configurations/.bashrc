@@ -28,6 +28,7 @@ import exports.sh
 import aliases.sh
 import suppress_bell.sh
 import reload_shell.sh
+import debug_utils.sh
 import string_utils.sh
 import default_text_editor.sh
 import clipboard_utils.sh
