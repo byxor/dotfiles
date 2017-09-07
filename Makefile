@@ -98,7 +98,7 @@ __perform_sync:
 	# Apply local changes to temporary branch
 	python tools/update_repository.py
 	git add .
-	git commit -am $(COMMIT_MESSAGE)
+	git diff-index --quiet HEAD || git commit -am $(COMMIT_MESSAGE)
 
 	# Merge temporary branch into main branch
 	git checkout $(MASTER_BRANCH)
