@@ -183,6 +183,4 @@ function userserver {
     else
         echo "Please provide a value for the container."
     fi
-    
-    
 }
