@@ -76,11 +76,12 @@ bindsym $MOD+apostrophe layout tabbed
 bindsym $MOD+numbersign layout toggle split
 
 ### RESIZE OPTIONS ###
+set $RESIZE_AMOUNT 10
 mode "resize" {
-        bindsym $DIRECTION_LEFT  resize shrink width 10 px or 10 ppt
-        bindsym $DIRECTION_RIGHT resize grow height 10 px or 10 ppt
-        bindsym $DIRECTION_UP    resize shrink height 10 px or 10 ppt
-        bindsym $DIRECTION_DOWN  resize grow width 10 px or 10 ppt
+        bindsym $DIRECTION_LEFT  resize shrink width  $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
+        bindsym $DIRECTION_RIGHT resize grow   width  $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
+        bindsym $DIRECTION_UP    resize grow   height $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
+        bindsym $DIRECTION_DOWN  resize shrink height $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
