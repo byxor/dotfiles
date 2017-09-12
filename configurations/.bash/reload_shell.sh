@@ -1,3 +1,3 @@
-function reload {
+function reload_shell {
     exec bash
 }
