@@ -58,16 +58,6 @@ bindsym $MOD+7 workspace 7
 bindsym $MOD+8 workspace 8
 bindsym $MOD+9 workspace 9
 bindsym $MOD+0 workspace 10
-bindsym $MOD+KP_1 workspace 1
-bindsym $MOD+KP_2 workspace 2
-bindsym $MOD+KP_3 workspace 3
-bindsym $MOD+KP_4 workspace 4
-bindsym $MOD+KP_5 workspace 5
-bindsym $MOD+KP_6 workspace 6
-bindsym $MOD+KP_7 workspace 7
-bindsym $MOD+KP_8 workspace 8
-bindsym $MOD+KP_9 workspace 9
-bindsym $MOD+KP_0 workspace 10
 
 bindsym $MOD+Shift+1 move container to workspace 1
 bindsym $MOD+Shift+2 move container to workspace 2
@@ -79,11 +69,6 @@ bindsym $MOD+Shift+7 move container to workspace 7
 bindsym $MOD+Shift+8 move container to workspace 8
 bindsym $MOD+Shift+9 move container to workspace 9
 bindsym $MOD+Shift+0 move container to workspace 10
-
-bindsym $MOD+Control+$DIRECTION_LEFT  move workspace to output left
-bindsym $MOD+Control+$DIRECTION_RIGHT move workspace to output right
-bindsym $MOD+Control+$DIRECTION_UP    move workspace to output up
-bindsym $MOD+Control+$DIRECTION_DOWN  move workspace to output down
 
 ### LAYOUT OPTIONS ###
 bindsym $MOD+semicolon  layout stacking

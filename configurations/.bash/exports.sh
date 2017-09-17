@@ -1,8 +1,3 @@
-export PATH=$PATH:/usr/local/go/bin
-export GOROOT=$HOME/installers/go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$GOROOT/workspace
-
 export PATH=$PATH:$HOME/installers/hugo/usr/bin
 export PATH=$PATH:$HOME/installers/Atom/usr/bin
 export PATH=$PATH:$HOME/installers/micropython/unix
