@@ -5,8 +5,11 @@
 (package-initialize)
 
 (defun relatively-import (file-name)
-  (load-file
-   (expand-file-name file-name (file-name-directory load-file-name))))
+  (let ((file-name (expand-file-name
+                   file-name
+                   (file-name-directory load-file-name))))
+    (print file-name)
+    (load-file file-name)))
 
 (relatively-import "melpa-loader.el")
 (relatively-import "arista-loader.el")
@@ -20,6 +23,8 @@
 (global-linum-mode 1)
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
+
+(global-set-key (kbd "C-x C-a") 'ace-window)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
