@@ -25,6 +25,7 @@
 (setq initial-scratch-message nil)
 
 (global-set-key (kbd "C-x C-a") 'ace-window)
+(ac-config-default)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
