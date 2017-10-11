@@ -1,0 +1,17 @@
+gnome-terminal
+tmux
+i3
+i3status
+dmenu-manjaro
+network-manager-applet
+gnome-keyring
+arandr
+emacs
+imagemagick
+sxiv
+lxappearance
+gtk-chtheme
+notify-osd
+pamac
+kolourpaint
+xclip
