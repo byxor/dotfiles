@@ -21,7 +21,7 @@ bar {
 }
 
 ### BASIC FEATURES AND SHORTCUTS###
-bindsym $MOD+Return  exec gnome-terminal
+bindsym $MOD+Return  exec termite
 bindsym $MOD+d       exec dmenu_run
 bindsym $MOD+z       fullscreen toggle
 bindsym $MOD+Shift+q kill

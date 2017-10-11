@@ -1,4 +1,4 @@
-gnome-terminal
+termite
 tmux
 i3
 i3status
