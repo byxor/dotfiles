@@ -1,5 +1,8 @@
 # Solarized dark color scheme
 
+[options]
+font = Roboto Mono for Powerline 9
+
 [colors]
 foreground = #839496
 foreground_bold = #eee8d5
