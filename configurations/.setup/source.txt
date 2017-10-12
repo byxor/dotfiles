@@ -1,1 +1,2 @@
-www.github.com/hastinbe/i3-volume
+http://www.github.com/hastinbe/i3-volume.git
+http://www.github.com/jimeh/tmux-themepack.git
