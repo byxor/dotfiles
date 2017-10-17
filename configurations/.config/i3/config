@@ -102,7 +102,7 @@ set $volumepath ~/software/i3-volume
 set $statuscmd i3status
 set $statussig SIGUSR1
 set $increase_step 2
-set $decrease_step $increase_step
+set $decrease_step 2
 bindsym XF86AudioRaiseVolume exec $volumepath/volume -i $increase_step -n -t $statuscmd -u $statussig
 bindsym XF86AudioLowerVolume exec $volumepath/volume -d $decrease_step -n -t $statuscmd -u $statussig
 bindsym XF86AudioMute exec $volumepath/volume -m -n -t $statuscmd -u $statussig
