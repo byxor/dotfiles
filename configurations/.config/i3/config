@@ -22,6 +22,7 @@ bar {
 
 ### BASIC FEATURES AND SHORTCUTS###
 bindsym $MOD+Return  exec termite
+bindsym $MOD+[       exec firefox
 bindsym $MOD+d       exec dmenu_run
 bindsym $MOD+z       fullscreen toggle
 bindsym $MOD+Shift+q kill
@@ -100,8 +101,8 @@ bindsym $MOD+r mode "resize"
 set $volumepath ~/software/i3-volume
 set $statuscmd i3status
 set $statussig SIGUSR1
-set $increase_step 1
-set $decrease_step 5
+set $increase_step 2
+set $decrease_step $increase_step
 bindsym XF86AudioRaiseVolume exec $volumepath/volume -i $increase_step -n -t $statuscmd -u $statussig
 bindsym XF86AudioLowerVolume exec $volumepath/volume -d $decrease_step -n -t $statuscmd -u $statussig
 bindsym XF86AudioMute exec $volumepath/volume -m -n -t $statuscmd -u $statussig

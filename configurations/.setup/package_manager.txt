@@ -16,3 +16,5 @@ pamac
 kolourpaint
 xclip
 feh
+xorg-xkill
+xorg-xev
