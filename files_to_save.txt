@@ -8,3 +8,4 @@
 ~/.config/i3status       .config/i3status
 ~/.setup                 .setup
 ~/.config/termite        .config/termite
+~/Pictures/Wallpapers    Pictures/Wallpapers

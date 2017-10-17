@@ -1,14 +1,26 @@
-((("tmux" .
-   [1 0 0 0])
-  ("t" .
-   [1])
-  ("foo" .
-   [2 0 0])
-  ("GO_TO_SHOP_TODAY" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("import" .
-   [2 0 0 0 0 0])
+((("final_path" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("LIST_OF_PACKAGES" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("package" .
    [2 0 0 0 0 0 0])
-  ("LIST_OF_PACKAGES" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("import" .
+   [2 0 0 0 0 0])
+  ("GO_TO_SHOP_TODAY" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("foo" .
+   [2 0 0])
+  ("t" .
+   [1])
+  ("tmux" .
+   [1 0 0 0])
+  ("WALLPAPER_DIRECTORY" .
+   [1 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 4])
+  ("WALLPAPER_IDENTIFIER" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("wallpaper" .
+   [3 0 0 0 0 0 0 0 0])
+  ("FULL_WALLPAPER_PATH" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("wallpaper-random" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])))
