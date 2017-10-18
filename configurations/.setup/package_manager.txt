@@ -18,3 +18,8 @@ xclip
 feh
 xorg-xkill
 xorg-xev
+compton
+compton
+compton
+compton
+compton
