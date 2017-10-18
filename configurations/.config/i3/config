@@ -21,16 +21,17 @@ bar {
 }
 
 ### BASIC FEATURES AND SHORTCUTS###
-bindsym $MOD+Return  exec termite
-bindsym $MOD+[       exec firefox
-bindsym $MOD+d       exec dmenu_run
-bindsym $MOD+z       fullscreen toggle
-bindsym $MOD+Shift+q kill
-bindsym $MOD+Shift+c reload
-bindsym $MOD+Shift+r restart
-bindsym $MOD+l       exec i3lock
-bindsym $MOD+s       exec systemctl suspend
-bindsym $MOD+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $MOD+Return       exec termite
+bindsym $MOD+slash        exec firefox
+bindsym $MOD+period       exec virtualbox
+bindsym $MOD+d            exec dmenu_run
+bindsym $MOD+z            fullscreen toggle
+bindsym $MOD+Shift+q      kill
+bindsym $MOD+Shift+c      reload
+bindsym $MOD+Shift+r      restart
+bindsym $MOD+l            exec i3lock
+bindsym $MOD+s            exec systemctl suspend
+bindsym $MOD+Shift+e      exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 ### MISC OPTIONS ###
 floating_modifier $MOD
