@@ -5,7 +5,7 @@ set $DIRECTION_RIGHT f
 set $DIRECTION_UP    p
 set $DIRECTION_DOWN  n
 
-### VISUAL CHANGES ###
+### VISUAL CHANGES ###`
 font pango:monospace 8
 bar {
   status_command i3status

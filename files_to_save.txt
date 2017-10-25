@@ -1,11 +1,12 @@
-# SOURCE                 DESTINATION (RELATIVE TO REPOSITORY)
+# SOURCE                      DESTINATION (RELATIVE TO REPOSITORY)
 #-------------------------------------------------
-~/.bashrc                .bashrc
-~/.bash                  .bash
-~/.tmux.conf             .tmux.conf
-~/.emacs.d               .emacs.d
-~/.config/i3             .config/i3
-~/.config/i3status       .config/i3status
-~/.setup                 .setup
-~/.config/termite        .config/termite
-~/Pictures/Wallpapers    Pictures/Wallpapers
+~/.bashrc                     .bashrc
+~/.bash                       .bash
+~/.tmux.conf                  .tmux.conf
+~/.emacs.d                    .emacs.d
+~/.config/i3                  .config/i3
+~/.config/i3status            .config/i3status
+~/.config/termite             .config/termite
+~/.config/compton.conf        .config/compton.conf
+~/.setup                      .setup
+~/Pictures/Wallpapers         Pictures/Wallpapers

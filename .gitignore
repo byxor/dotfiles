@@ -1,5 +1,6 @@
 */.emacs.d/server/
 */.emacs.d/url/
+*/.emacs.d/ac-comphist.dat
 *auto-save-list*
 *.last
 *~
