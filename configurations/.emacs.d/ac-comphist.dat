@@ -1,11 +1,5 @@
-((("final_path" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("LIST_OF_PACKAGES" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("package" .
-   [2 0 0 0 0 0 0])
-  ("import" .
-   [2 0 0 0 0 0])
+((("import" .
+   [1 0 0 0 0 0])
   ("GO_TO_SHOP_TODAY" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("foo" .
@@ -14,13 +8,61 @@
    [1])
   ("tmux" .
    [1 0 0 0])
-  ("WALLPAPER_DIRECTORY" .
-   [1 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 4])
-  ("WALLPAPER_IDENTIFIER" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("wallpaper" .
-   [3 0 0 0 0 0 0 0 0])
-  ("FULL_WALLPAPER_PATH" .
-   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("wallpaper-random" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])))
+  ("sanityTests" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("TimestampFetcher" .
+   [2 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("const" .
+   [0 0 0 0 1])
+  ("U64" .
+   [9 0 1])
+  ("Time" .
+   [1 0 0 0])
+  ("timestamp" .
+   [20 0 0 0 0 0 0 0 1])
+  ("switchCounter" .
+   [8 0 0 0 0 0 0 1 0 1 0 0 0])
+  ("high" .
+   [1 0 0 0])
+  ("highPortionOf" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lowPortionOf" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("displayWarningIfIncorrect" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("interfaceId" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("sequenceId" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("handleRollover" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("U32" .
+   [7 0 0])
+  ("LOWER_MASK" .
+   [2 0 0 0 0 1 0 0 0 0])
+  ("UPPER_MASK" .
+   [1 0 0 0 0 0 1 0 0 0])
+  ("applySwitchCounter" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("seconds" .
+   [1 0 0 0 0 0 0])
+  ("nanoseconds" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("PtpTimeSync" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("Constants" .
+   [1 0 0 0 0 0 0 0 0])
+  ("oneSecondInNs" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("Conversion" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("PtrConst" .
+   [1 0 0 0 0 0 0 0])
+  ("doEverything" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("temporaryTimestamp" .
+   [1 0 0 0 0 0 0 0 0 1 2 0 0 0 0 0 0 0])
+  ("switchTs" .
+   [2 0 0 0 0 0 0 0])
+  ("switchTimestamp" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
