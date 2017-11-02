@@ -34,7 +34,7 @@ import default_text_editor.sh
 import clipboard_utils.sh
 import navigation_helpers.sh
 import hard_reset.sh
-import capslock_for_tmux.sh
+import tmux_helpers.sh
 import git_settings.sh
 import git_helpers.sh
 import git_shell_prompt.sh
