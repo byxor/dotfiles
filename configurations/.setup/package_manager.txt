@@ -25,3 +25,12 @@ compton
 compton
 emacs24
 i3
+compton
+feh
+compton
+flux
+xflux
+xbacklight
+fluxgui
+xbacklight
+npm
