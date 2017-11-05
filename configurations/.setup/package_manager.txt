@@ -23,3 +23,5 @@ compton
 compton
 compton
 compton
+emacs24
+i3

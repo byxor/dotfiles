@@ -1,3 +1,4 @@
 https://www.github.com/hastinbe/i3-volume.git
 https://www.github.com/jimeh/tmux-themepack.git
 https://github.com/powerline/fonts.git
+https://github.com/Corwind/termite-install
