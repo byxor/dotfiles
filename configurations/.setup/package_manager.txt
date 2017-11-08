@@ -34,3 +34,5 @@ xbacklight
 fluxgui
 xbacklight
 npm
+nodejs
+nodejs-legacy

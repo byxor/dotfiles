@@ -27,6 +27,9 @@
 (global-set-key (kbd "C-x C-a") 'ace-window)
 (ac-config-default)
 
+(add-to-list 'load-path "/directory/containing/neotree/")
+(require 'neotree)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
