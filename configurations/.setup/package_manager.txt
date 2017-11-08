@@ -36,3 +36,4 @@ xbacklight
 npm
 nodejs
 nodejs-legacy
+python3.6
