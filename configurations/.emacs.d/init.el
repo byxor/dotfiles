@@ -17,6 +17,8 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (column-number-mode 1)
 (show-paren-mode 1)
 (ido-mode 1)
