@@ -25,9 +25,9 @@ function containers {
 function container {
     if ! [ -z "$1" ]
     then
-        local container=$1.0
+        local container=$1
 	__container-last-set $container
-	a4c shell $container
+	a4c shell $container.0
     else
         echo "Please provide a value for the container."
     fi
