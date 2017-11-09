@@ -34,3 +34,8 @@ xbacklight
 fluxgui
 xbacklight
 npm
+nodejs
+nodejs-legacy
+python3.6
+virtualenv
+trash-cli

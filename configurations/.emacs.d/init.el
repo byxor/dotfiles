@@ -17,6 +17,8 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
 
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (column-number-mode 1)
 (show-paren-mode 1)
 (ido-mode 1)
@@ -26,6 +28,9 @@
 
 (global-set-key (kbd "C-x C-a") 'ace-window)
 (ac-config-default)
+
+(add-to-list 'load-path "/directory/containing/neotree/")
+(require 'neotree)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

@@ -6,3 +6,8 @@ function pydir {
 function venv {
     source venv/bin/activate
 }
+
+function pytest {
+    hardreset && nosetests --with-coverage --cover-inclusive --cover-package=$(basename $(pwd)) --cover-html --cover-xml
+    python-codacy-coverage -r coverage.xml
+}
