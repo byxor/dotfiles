@@ -1,19 +1,15 @@
-# Solarized dark color scheme
-
 [options]
 font = Roboto Mono for Powerline 10
+scrollback_lines = 10000
+
 
 [colors]
 foreground = #839496
 foreground_bold = #eee8d5
-#foreground_dim = #888888
 background = #002b36
 cursor = #93a1a1
 
-# if unset, will reverse foreground and background
-#highlight = #839496
 
-# colors from color0 to color254 can be set
 color0 = #073642
 color1 = #dc322f
 color2 = #859900
@@ -30,3 +26,4 @@ color12 = #839496
 color13 = #6c71c4
 color14 = #93a1a1
 color15 = #fdf6e3
+# Goes up to color256 (inclusively)
