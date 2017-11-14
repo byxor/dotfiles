@@ -27,6 +27,7 @@
 (setq initial-scratch-message nil)
 
 (global-set-key (kbd "C-x C-a") 'ace-window)
+(global-set-key (kbd "C-z") 'zoom-window-zoom)
 (ac-config-default)
 
 (add-to-list 'load-path "/directory/containing/neotree/")
