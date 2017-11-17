@@ -8,6 +8,10 @@ function venv {
 }
 
 function pytest {
-    hardreset && nosetests --with-coverage --cover-inclusive --cover-package=$(basename $(pwd)) --cover-html --cover-xml
+    pytest-quick
     python-codacy-coverage -r coverage.xml
+}
+
+function pytest-quick {
+    hardreset && nosetests --with-coverage --cover-inclusive --cover-package=$(basename $(pwd)) --cover-html --cover-xml
 }
