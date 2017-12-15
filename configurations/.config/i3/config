@@ -11,8 +11,8 @@ set $DIRECTION_DOWN  n
 bindsym $MOD+Return       exec termite
 
 bindsym $MOD+F1           exec nm-applet
-bindsym $MOD+F2           exec compton
-bindsym $MOD+F3           exec fluxgui
+bindsym $MOD+F3           exec compton
+bindsym $MOD+F4           exec fluxgui
 
 bindsym $MOD+F5           exec gedit
 bindsym $MOD+F7           exec gvim

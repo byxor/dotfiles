@@ -47,5 +47,6 @@ import passflip_helpers.sh
 import screenshot_helpers.sh
 import wallpaper.sh
 import package_installation_helpers.sh
+import compose_key.sh
 #import tmux_colour_fix.sh --- Seems to break with termite.
 echo "done."
