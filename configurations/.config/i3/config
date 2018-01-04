@@ -1,9 +1,10 @@
 ### GLOBAL VARIABLES ###
 set $MOD Mod4
-set $DIRECTION_LEFT  b
-set $DIRECTION_RIGHT f
-set $DIRECTION_UP    p
-set $DIRECTION_DOWN  n
+set $DIRECTION_LEFT   b
+set $DIRECTION_RIGHT  f
+set $DIRECTION_UP     p
+set $DIRECTION_DOWN   n
+set $BASH_EXECUTABLES ~/.bash/executables
 
 ### BASIC FEATURES AND SHORTCUTS###
 
@@ -19,20 +20,20 @@ bindsym $MOD+F7           exec gvim
 bindsym $MOD+F8           exec emacs
 
 bindsym $MOD+F9           exec firefox
-bindsym $MOD+F10          exec spotify
+bindsym $MOD+F10          exec $BASH_EXECUTABLES/restart_spotify.sh
 bindsym $MOD+F11          exec kolourpaint
 bindsym $MOD+F12          exec arandr
 
 # Shortcuts
-bindsym $MOD+d            exec dmenu_run
-bindsym $MOD+z            fullscreen toggle
-bindsym $MOD+Shift+q      kill
-bindsym $MOD+Shift+c      reload
-bindsym $MOD+Shift+r      restart
-bindsym $MOD+l            exec i3lock
-bindsym $MOD+Shift+s      exec systemctl suspend
-bindsym $MOD+Shift+BackSpace    exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $MOD+w exec i3-input -F 'rename workspace to "%s"' -P 'Rename workspace: '
+bindsym $MOD+d                exec dmenu_run
+bindsym $MOD+z                fullscreen toggle
+bindsym $MOD+Shift+q          kill
+bindsym $MOD+Shift+c          reload
+bindsym $MOD+Shift+r          restart
+bindsym $MOD+l                exec i3lock
+bindsym $MOD+Shift+s          exec systemctl suspend
+bindsym $MOD+Shift+w          exec i3-input -F 'rename workspace to "%s"' -P 'Rename workspace: '
+bindsym $MOD+Shift+BackSpace  exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 ### MISC OPTIONS ###
 floating_modifier $MOD
@@ -46,8 +47,8 @@ bindsym $MOD+v split v
 
 ### SCREENSHOT OPTIONS ###
 set $SCREENSHOT_CODE ~/.bash/.screenshot
-bindsym $MOD+bracketleft  exec $SCREENSHOT_CODE/_screen.sh
-bindsym $MOD+bracketright exec $SCREENSHOT_CODE/_region.sh
+bindsym $MOD+bracketleft  exec $BASH_EXECUTABLES/screenshot_screen.sh
+bindsym $MOD+bracketright exec $BASH_EXECUTABLES/screenshot_region.sh
 
 ### MOVEMENT OPTIONS ###
 bindsym $MOD+$DIRECTION_LEFT  focus left

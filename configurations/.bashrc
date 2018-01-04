@@ -21,8 +21,8 @@ function import {
     fi
 }
 
-
 echo "Loading .bashrc"
+import prepare_executables.sh
 import defaults.sh
 import exports.sh
 import aliases.sh
@@ -44,7 +44,6 @@ import sudo_warning.sh
 import rm_warning.sh
 import python_helpers.sh
 import passflip_helpers.sh
-import screenshot_helpers.sh
 import wallpaper.sh
 import package_installation_helpers.sh
 import compose_key.sh
