@@ -102,6 +102,7 @@ mode "resize" {
         bindsym $DIRECTION_RIGHT resize grow   width  $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
+	bindsym q      mode "default"
 }
 bindsym $MOD+r mode "resize"
 
