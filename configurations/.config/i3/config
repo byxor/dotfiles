@@ -94,17 +94,29 @@ bindsym $MOD+apostrophe layout tabbed
 bindsym $MOD+numbersign layout toggle split
 
 ### RESIZE OPTIONS ###
-set $RESIZE_AMOUNT 10
+bindsym $MOD+r mode "resize"
+
+set $RESIZE_MODIFIER     Control
+set $RESIZE_AMOUNT_BIG   10
+set $RESIZE_AMOUNT_SMALL 1
+
 mode "resize" {
-        bindsym $DIRECTION_UP    resize shrink height $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
-        bindsym $DIRECTION_DOWN  resize grow   height $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
-        bindsym $DIRECTION_LEFT  resize shrink width  $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
-        bindsym $DIRECTION_RIGHT resize grow   width  $RESIZE_AMOUNT px or $RESIZE_AMOUNT ppt
+        bindsym $DIRECTION_UP    resize shrink height $RESIZE_AMOUNT_BIG px or $RESIZE_AMOUNT_BIG ppt
+        bindsym $DIRECTION_DOWN  resize grow   height $RESIZE_AMOUNT_BIG px or $RESIZE_AMOUNT_BIG ppt
+        bindsym $DIRECTION_LEFT  resize shrink width  $RESIZE_AMOUNT_BIG px or $RESIZE_AMOUNT_BIG ppt
+        bindsym $DIRECTION_RIGHT resize grow   width  $RESIZE_AMOUNT_BIG px or $RESIZE_AMOUNT_BIG ppt
+	
+	bindsym $RESIZE_MODIFIER+$DIRECTION_UP    resize shrink height $RESIZE_AMOUNT_SMALL px or $RESIZE_AMOUNT_SMALL ppt
+        bindsym $RESIZE_MODIFIER+$DIRECTION_DOWN  resize grow   height $RESIZE_AMOUNT_SMALL px or $RESIZE_AMOUNT_SMALL ppt
+        bindsym $RESIZE_MODIFIER+$DIRECTION_LEFT  resize shrink width  $RESIZE_AMOUNT_SMALL px or $RESIZE_AMOUNT_SMALL ppt
+        bindsym $RESIZE_MODIFIER+$DIRECTION_RIGHT resize grow   width  $RESIZE_AMOUNT_SMALL px or $RESIZE_AMOUNT_SMALL ppt
+	
         bindsym Return mode "default"
         bindsym Escape mode "default"
 	bindsym q      mode "default"
 }
-bindsym $MOD+r mode "resize"
+
+
 
 ### VOLUME OPTIONS ###
 set $volumepath ~/software/i3-volume
