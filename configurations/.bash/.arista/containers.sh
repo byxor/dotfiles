@@ -51,3 +51,12 @@ function container-new {
         echo "Please provide a name for the container."
     fi
 }
+
+function container-delete {
+    if ! [ -z "$1" ]
+    then
+	a4c delete $1.0
+    else
+        echo "Please provide a name for the container."
+    fi
+}
