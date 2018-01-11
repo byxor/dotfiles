@@ -1,7 +1,7 @@
 (defun attempt-load-library (library)
   (if (not (equal (locate-library library) nil))
       (load-library library)
-    (message "Library '%s' not found. Skipping..." library)))
+      (message "Library '%s' not found. Skipping..." library)))
  
 ;; Makes TAB do the right thing for various languages.
 (attempt-load-library "arastra-indent")
