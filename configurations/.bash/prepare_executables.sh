@@ -1,4 +1,2 @@
-DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/executables"
-ls $DIRECTORY | xargs chmod u+x
-# chmod u+x $DIRECTORY/_screen.sh
-# chmod u+x $DIRECTORY/_region.sh
+EXECUTABLE_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/executables"
+cd $EXECUTABLE_DIRECTORY && ls -1 | xargs chmod u+x

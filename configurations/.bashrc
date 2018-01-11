@@ -5,6 +5,13 @@ case $- in
     *) return;;
 esac
 
+function import-multiple {
+    local modules=$@
+    for module in ${modules[@]}; do
+        import $module
+    done
+}
+
 _IMPORTED_MODULES=''
 
 function import {
@@ -13,7 +20,7 @@ function import {
     if [[ $_IMPORTED_MODULES != *$module* ]]
     then
 	echo Importing $module...
-	source $BASH_DIRECTORY/$module
+	source $BASH_DIRECTORY/$module.sh
 	_IMPORTED_MODULES+=" "
 	_IMPORTED_MODULES+="$module"
     else
@@ -21,31 +28,37 @@ function import {
     fi
 }
 
+MODULES=(
+    prepare_executables
+    defaults
+    exports
+    aliases
+    suppress_bell
+    reload_shell
+    debug_utils
+    string_utils
+    default_text_editor
+    clipboard_utils
+    navigation_helpers
+    hard_reset
+    tmux_helpers
+    git_settings
+    git_helpers
+    git_shell_prompt
+    setup_emacs_backups
+    arista_helpers
+    sudo_warning
+    rm_warning
+    wallpaper
+    python_helpers
+    passflip_helpers
+    package_installation_helpers
+    compose_key
+    # tmux_colour_fix --- Seems to break with termite.
+)
+
 echo "Loading .bashrc"
-import prepare_executables.sh
-import defaults.sh
-import exports.sh
-import aliases.sh
-import suppress_bell.sh
-import reload_shell.sh
-import debug_utils.sh
-import string_utils.sh
-import default_text_editor.sh
-import clipboard_utils.sh
-import navigation_helpers.sh
-import hard_reset.sh
-import tmux_helpers.sh
-import git_settings.sh
-import git_helpers.sh
-import git_shell_prompt.sh
-import setup_emacs_backups.sh
-import arista_helpers.sh
-import sudo_warning.sh
-import rm_warning.sh
-import python_helpers.sh
-import passflip_helpers.sh
-import wallpaper.sh
-import package_installation_helpers.sh
-import compose_key.sh
-#import tmux_colour_fix.sh --- Seems to break with termite.
+echo "---------------"
+import-multiple ${MODULES[@]}
+echo "---------------"
 echo "done."

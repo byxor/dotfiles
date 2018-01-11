@@ -1,5 +1,6 @@
 alias emacs="emacs -nw "
 alias sus="systemctl suspend"
-alias proj="cd ~/projects"
-alias conf="cd ~/projects/configurations"
-
+alias .p="cd ~/projects"
+alias .c="cd ~/projects/configurations"
+alias .b="cd ~/.bash"
+alias .e="cd ~/.emacs.d"
