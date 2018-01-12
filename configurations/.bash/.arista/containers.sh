@@ -1,17 +1,17 @@
 LAST_CONTAINER_FILE_NAME=$ARISTA_STATE/last_container
 
 
-function __container-last-set {
+function __set-last-short_container {
     if ! [ -z "$1" ]
     then
-        local container=$1
-        echo $container > $LAST_CONTAINER_FILE_NAME
+        local short_container=$1
+        echo $short_container > $LAST_CONTAINER_FILE_NAME
     else
         echo "Please provide a value for the container."
     fi
 }
 
-function __container-last-get {
+function __get-last-short_container {
     if [ -f $LAST_CONTAINER_FILE_NAME ]
     then
         cat $LAST_CONTAINER_FILE_NAME
@@ -25,19 +25,20 @@ function containers {
 function container {
     if ! [ -z "$1" ]
     then
-        local container=$1.0
-	__container-last-set $container
-	a4c shell $container
+        local short_container=$1
+	__set-last-short_container $short_container
+        local full_container=$1.0
+	a4c shell $full_container
     else
         echo "Please provide a value for the container."
     fi
 }
 
 function container-last {
-    local last_container=$(__container-last-get)
-    if [ -n "$last_container" ]
+    local last_short_container=$(__get-last-short_container)
+    if [ -n "$last_short_container" ]
     then
-        container $last_container
+        container $last_short_container
     else
         echo "There is no known 'last container'."
     fi
