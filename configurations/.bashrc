@@ -54,6 +54,7 @@ MODULES=(
     passflip_helpers
     package_installation_helpers
     compose_key
+    java_environment
     # tmux_colour_fix --- Seems to break with termite.
 )
 
