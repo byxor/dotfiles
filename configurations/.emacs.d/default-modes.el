@@ -2,7 +2,6 @@
 (show-paren-mode 1)
 (ido-mode 1)
 (ac-config-default)
-(projectile-mode 1)
 (global-linum-mode 1)
 (neotree)
 

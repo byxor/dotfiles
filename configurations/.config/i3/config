@@ -21,7 +21,7 @@ bindsym $MOD+F8           exec emacs
 
 bindsym $MOD+F9           exec firefox
 bindsym $MOD+F10          exec $BASH_EXECUTABLES/restart_spotify.sh
-bindsym $MOD+F11          exec kolourpaint
+bindsym $MOD+F11          exec $BASH_EXECUTABLES/hide_notifications.sh
 bindsym $MOD+F12          exec arandr
 
 # Shortcuts
