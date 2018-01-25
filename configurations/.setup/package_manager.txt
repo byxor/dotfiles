@@ -41,3 +41,5 @@ virtualenv
 trash-cli
 sendmail
 cdecl
+python3.6
+gparted
