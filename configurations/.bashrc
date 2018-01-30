@@ -56,6 +56,7 @@ MODULES=(
     package_installation_helpers
     compose_key
     java_environment
+    repair
     # tmux_colour_fix --- Seems to break with termite.
 )
 
