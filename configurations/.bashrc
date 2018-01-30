@@ -37,6 +37,7 @@ MODULES=(
     reload_shell
     debug_utils
     string_utils
+    file_utils
     default_text_editor
     clipboard_utils
     navigation_helpers
