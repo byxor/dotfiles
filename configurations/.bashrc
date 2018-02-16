@@ -57,6 +57,7 @@ MODULES=(
     compose_key
     java_environment
     repair
+    tmux_session
     # tmux_colour_fix --- Seems to break with termite.
 )
 
@@ -65,3 +66,7 @@ echo "---------------"
 import-multiple ${MODULES[@]}
 echo "---------------"
 echo "done."
+
+
+
+

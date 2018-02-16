@@ -43,3 +43,6 @@ sendmail
 cdecl
 python3.6
 gparted
+tmux
+tmux
+tmux
