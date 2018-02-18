@@ -12,3 +12,4 @@
 (global-set-key (custom-shortcut "C-s") 'sr-speedbar-toggle)
 (global-set-key (custom-shortcut "C-c") 'comment-region)
 (global-set-key (custom-shortcut "M-c") 'uncomment-region)
+(global-set-key (custom-shortcut "C-n") 'neotree)
