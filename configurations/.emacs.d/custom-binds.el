@@ -13,3 +13,4 @@
 (global-set-key (custom-shortcut "C-c") 'comment-region)
 (global-set-key (custom-shortcut "M-c") 'uncomment-region)
 (global-set-key (custom-shortcut "C-n") 'neotree)
+(global-set-key (custom-shortcut "C-e") 'electric-indent-mode)

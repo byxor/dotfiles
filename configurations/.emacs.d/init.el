@@ -15,6 +15,7 @@
           "custom-binds.el"
           "default-modes.el"
           "disable-startup-message.el"
+          "unsorted-functions.el"
           "autosave-changes.el"))
 
 ;; Automated custom stuff

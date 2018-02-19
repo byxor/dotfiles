@@ -1,5 +1,6 @@
 (column-number-mode 1)
 (show-paren-mode 1)
+(electric-indent-mode 0)
 (ido-mode 1)
 (ac-config-default)
 
