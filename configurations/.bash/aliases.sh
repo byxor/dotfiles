@@ -7,3 +7,4 @@ alias .e="cd ~/.emacs.d"
 alias .s="cd /src/"
 alias .h="cd ~"
 alias .r="cd /"
+alias csc=/mnt/c/Windows/Microsoft.NET/Framework/v4.0.30319/csc.exe
