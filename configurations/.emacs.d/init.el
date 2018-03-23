@@ -1,5 +1,3 @@
-(package-initialize)
-
 (defun relatively-import (file-name)
   (absolutely-import (full-path-of file-name)))
 
@@ -17,6 +15,8 @@
           "disable-startup-message.el"
           "unsorted-functions.el"
           "autosave-changes.el"))
+
+(package-initialize)
 
 ;; Automated custom stuff
 (custom-set-variables
@@ -79,7 +79,7 @@ static char *gnus-pointer[] = {
  '(indent-tabs-mode nil)
  '(markdown-command "/usr/bin/pandoc")
  '(package-selected-packages
-   '(treemacs projectile sr-speedbar pomidor pomodoro tdd-status-mode-line afternoon-theme abyss-theme markdown-mode auto-complete ace-window 2048-game))
+   '(csharp-mode treemacs projectile sr-speedbar pomidor pomodoro tdd-status-mode-line afternoon-theme abyss-theme markdown-mode auto-complete ace-window 2048-game))
  '(vc-annotate-background "#f6f0e1")
  '(vc-annotate-color-map
    '((20 . "#d81212")
