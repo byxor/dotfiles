@@ -7,6 +7,8 @@
 (defun absolutely-import (file-path)
   (progn (message "Importing '%s'..." file-name) (load-file file-path)))
 
+(package-initialize)
+
 (mapcar 'relatively-import
         '("melpa-loader.el"
           "arista-loader.el"
@@ -15,8 +17,6 @@
           "disable-startup-message.el"
           "unsorted-functions.el"
           "autosave-changes.el"))
-
-(package-initialize)
 
 ;; Automated custom stuff
 (custom-set-variables
