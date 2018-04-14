@@ -1,0 +1,4 @@
+pane	0	0	:bash	1	:*	0	:/home/brandon	0	bash	:
+pane	0	0	:bash	1	:*	1	:/home/brandon	1	bash	:
+window	0	0	1	:*	08a7,65x56,0,0[65x28,0,0,0,65x27,0,29,1]
+state	0	

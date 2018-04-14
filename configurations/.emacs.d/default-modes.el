@@ -6,3 +6,5 @@
 (setq speedbar-initial-expansion-list-name "quick buffers")
 (add-to-list 'load-path "/directory/containing/neotree/")
 (setq sgml-quick-keys 'indent)
+(setq web-mode-enable-current-element-highlight t)
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
