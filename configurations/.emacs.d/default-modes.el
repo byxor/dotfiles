@@ -7,4 +7,5 @@
 (add-to-list 'load-path "/directory/containing/neotree/")
 (setq sgml-quick-keys 'indent)
 (setq web-mode-enable-current-element-highlight t)
+(setq typescript-indent-level 2)
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
