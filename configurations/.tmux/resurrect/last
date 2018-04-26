@@ -1,16 +1,7 @@
-pane	0	0	:bash	1	:*	0	:/home/brandon	1	bash	:
-pane	angular	0	:emacs	1	:*	0	:/home/brandon/projects/angular	0	bash	:
-pane	angular	0	:emacs	1	:*	1	:/home/brandon/projects/angular/src/app	1	bash	:
-pane	angular2	0	:emacs	1	:*	0	:/home/brandon/projects/angular2	0	bash	:
-pane	angular2	0	:emacs	1	:*	1	:/home/brandon/projects/angular2	0	bash	:
-pane	angular2	0	:emacs	1	:*	2	:/home/brandon/projects/angular2	1	emacs	:emacs -nw -nw -nw src
-pane	website	0	:bash	1	:*	0	:/home/brandon/website	1	emacs	:emacs -nw -nw src/app/
-pane	website	1	:bash	0	:	0	:/home/brandon/website/src/app	1	bash	:
-pane	website	2	:ng	0	:-	0	:/home/brandon/website	1	ng	:ng
-window	0	0	1	:*	cb3e,199x56,0,0,1
-window	angular	0	1	:*	1749,199x56,0,0[199x28,0,0,2,199x27,0,29,3]
-window	angular2	0	1	:*	b9c1,199x56,0,0{63x56,0,0[63x28,0,0,4,63x27,0,29,5],135x56,64,0,6}
-window	website	0	1	:*	cb44,199x56,0,0,7
-window	website	1	0	:	cb45,199x56,0,0,8
-window	website	2	0	:-	cb46,199x56,0,0,9
-state	website	angular
+pane	0	0	:emacs	1	:*	0	:/home/brandon/projects/website	1	emacs	:emacs -nw src/app/
+pane	0	1	:bash	0	:-	0	:/home/brandon/projects/website	1	bash	:
+pane	0	2	:ng	0	:	0	:/home/brandon/projects/website	1	ng	:ng
+window	0	0	1	:*	cb3d,199x56,0,0,0
+window	0	1	0	:-	cb40,199x56,0,0,3
+window	0	2	0	:	cb41,199x56,0,0,4
+state	0	
