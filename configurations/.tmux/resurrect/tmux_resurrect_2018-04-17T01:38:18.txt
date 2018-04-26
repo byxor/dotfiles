@@ -1,0 +1,7 @@
+pane	0	0	:emacs	1	:*	0	:/home/brandon/projects/website	1	emacs	:emacs -nw src/app/
+pane	0	1	:bash	0	:-	0	:/home/brandon/projects/website	1	bash	:
+pane	0	2	:ng	0	:	0	:/home/brandon/projects/website	1	ng	:ng
+window	0	0	1	:*	cb3d,199x56,0,0,0
+window	0	1	0	:-	cb40,199x56,0,0,3
+window	0	2	0	:	cb41,199x56,0,0,4
+state	0	
