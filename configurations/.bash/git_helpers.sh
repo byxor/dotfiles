@@ -5,7 +5,7 @@ git config --global alias.add-commit '!git add -A && git commit'
 function lazygit() {
   git add .
   if git commit -a -m "$1"; then
-    read -r -p "Are you sure you want to push these changes? [y/N]} " response
+    read -r -p "Are you sure you want to push these changes? [y/N]: " response
     case "$response" in
       [yY][eE][sS]|[yY])
         git push
