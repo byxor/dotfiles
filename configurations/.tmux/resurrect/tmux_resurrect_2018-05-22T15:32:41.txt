@@ -1,0 +1,6 @@
+pane	0	0	:bash	1	:*	0	:/home/brandon/projects/schedule	1	bash	:
+pane	thought	0	:emacs	1	:*	0	:/home/brandon/projects/thought	1	emacs	:emacs -nw README.md
+pane	thought	0	:emacs	1	:*	1	:/home/brandon/projects/thought/compiler	0	bash	:
+window	0	0	1	:*	1620,199x9,0,0,2
+window	thought	0	1	:*	866b,227x65,0,0{113x65,0,0,3,113x65,114,0,4}
+state	thought	

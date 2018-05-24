@@ -3,9 +3,7 @@ pane	kapoki	0	:bash	1	:*	1	:/home/brandon/projects/kapoki	1	bash	:
 pane	schedule	0	:bash	1	:*	0	:/home/brandon/projects/schedule	1	bash	:
 pane	thought	0	:bash	1	:*	0	:/home/brandon/projects/thought	0	emacs	:emacs -nw README.md
 pane	thought	0	:bash	1	:*	1	:/home/brandon/projects/thought/compiler	1	bash	:
-pane	website	0	:bash	1	:*	0	:/home/brandon/projects/thought	1	bash	:
 window	kapoki	0	1	:*	0670,227x65,0,0{113x65,0,0,6,113x65,114,0,7}
 window	schedule	0	1	:*	c69f,227x65,0,0,2
 window	thought	0	1	:*	866b,227x65,0,0{113x65,0,0,3,113x65,114,0,4}
-window	website	0	1	:*	c6a6,227x65,0,0,9
-state	website	thought
+state	thought	
