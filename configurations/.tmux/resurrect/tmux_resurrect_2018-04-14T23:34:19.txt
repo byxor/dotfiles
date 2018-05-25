@@ -1,0 +1,11 @@
+pane	angular	0	:emacs	1	:*	0	:/home/brandon/projects/angular	0	ng	:ng
+pane	angular	0	:emacs	1	:*	1	:/home/brandon/projects/angular/src/app/blog (deleted)	0	bash	:
+pane	angular	0	:emacs	1	:*	2	:/home/brandon/projects/angular	1	emacs	:emacs -nw src/app/
+pane	angular2	0	:emacs	1	:*	0	:/home/brandon/projects/angular2	0	ng	:ng
+pane	angular2	0	:emacs	1	:*	1	:/home/brandon/projects/angular2	0	bash	:
+pane	angular2	0	:emacs	1	:*	2	:/home/brandon/projects/angular2	1	emacs	:emacs -nw src
+pane	website	0	:bash	1	:*	0	:/home/brandon/website	1	bash	:
+window	angular	0	1	:*	399d,199x56,0,0{44x56,0,0[44x28,0,0,0,44x27,0,29,3],154x56,45,0,1}
+window	angular2	0	1	:*	39cd,199x56,0,0{63x56,0,0[63x28,0,0,5,63x27,0,29,8],135x56,64,0,7}
+window	website	0	1	:*	65cf,199x56,0,0,10
+state	website	
