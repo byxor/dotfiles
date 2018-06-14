@@ -1,0 +1,19 @@
+pane	nasm	0	:bash	1	:*	0	:/home/brandon/projects/sillybin/nasm	0	emacs	:emacs -nw hello.s
+emacs -nw .
+pane	nasm	0	:bash	1	:*	1	:/home/brandon/projects/sillybin/nasm	1	bash	:
+pane	reshade	0	:bash	1	:*	0	:/home/brandon/projects/thug-pro-reshade	0	emacs	:emacs -nw THUG Pro/scripts/ReShade/Presets/thugpro/
+pane	reshade	0	:bash	1	:*	1	:/home/brandon/projects/thug-pro-reshade	1	bash	:
+pane	schedule	0	:[tmux]	1	:*	0	:/home/brandon/projects/configurations	1	bash	:
+pane	thps	0	:emacs	1	:*	0	:/home/brandon/projects/thug-pro-level-changer	1	emacs	:emacs -nw tests/
+pane	thps	0	:emacs	1	:*	1	:/home/brandon/projects/thug-pro-level-changer	0	bash	:
+pane	thug1	0	:emacs	1	:*Z	0	:/home/brandon/projects/thug	0	bash	:less
+pane	thug1	0	:emacs	1	:*Z	1	:/home/brandon/projects/thug	1	emacs	:emacs -nw Code/Sk/Main.cpp
+pane	tricks	0	:bash	1	:*	0	:/home/brandon/projects/trickset	0	emacs	:emacs -nw README.md
+pane	tricks	0	:bash	1	:*	1	:/home/brandon/projects/trickset	1	bash	:
+window	nasm	0	1	:*	4e7b,136x71,0,0[136x61,0,0,10,136x9,0,62,11]
+window	reshade	0	1	:*	7c0d,136x71,0,0{91x71,0,0,4,44x71,92,0,5}
+window	schedule	0	1	:*	b85f,274x71,0,0,2
+window	thps	0	1	:*	5965,274x71,0,0{137x71,0,0,0,136x71,138,0,1}
+window	thug1	0	1	:*Z	eb58,191x49,0,0[191x24,0,0,8,191x24,0,25,9]
+window	tricks	0	1	:*	a9b6,136x71,0,0{67x71,0,0,6,68x71,68,0,7}
+state	reshade	nasm

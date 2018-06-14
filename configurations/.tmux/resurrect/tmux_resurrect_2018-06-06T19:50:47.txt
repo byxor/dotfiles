@@ -1,0 +1,6 @@
+pane	schedule	0	:bash	1	:*	0	:/home/brandon/projects/configurations	1	bash	:
+pane	thps	0	:bash	1	:*	0	:/home/brandon/projects/thug-pro-level-changer	0	emacs	:emacs -nw tests/
+pane	thps	0	:bash	1	:*	1	:/home/brandon/projects/thug-pro-level-changer	1	bash	:
+window	schedule	0	1	:*	b85f,274x71,0,0,2
+window	thps	0	1	:*	5965,274x71,0,0{137x71,0,0,0,136x71,138,0,1}
+state	schedule	thps
