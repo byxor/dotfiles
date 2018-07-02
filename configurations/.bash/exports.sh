@@ -10,3 +10,4 @@ export PATH=$PATH:$HOME/software/cmake-3.11.2-Linux-x86_64/bin
 export PATH=$PATH:$HOME/.npm-global/bin
 
 export GOPATH=$HOME/projects/go
+export PATH=$PATH:$GOPATH/bin
