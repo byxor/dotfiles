@@ -1,11 +1,22 @@
-pane	kapoki	0	:bash	1	:*	0	:/home/brandon/projects/kapoki	0	emacs	:emacs -nw kapoki.sh
-pane	kapoki	0	:bash	1	:*	1	:/home/brandon/projects/kapoki	1	bash	:
-pane	schedule	0	:bash	1	:*	0	:/home/brandon/projects/schedule	1	bash	:
-pane	thought	0	:bash	1	:*	0	:/home/brandon/projects/thought	0	emacs	:emacs -nw README.md
-pane	thought	0	:bash	1	:*	1	:/home/brandon/projects/thought/compiler	1	bash	:
-pane	website	0	:bash	1	:*	0	:/home/brandon/projects/thought	1	bash	:
-window	kapoki	0	1	:*	0670,227x65,0,0{113x65,0,0,6,113x65,114,0,7}
-window	schedule	0	1	:*	c69f,227x65,0,0,2
-window	thought	0	1	:*	866b,227x65,0,0{113x65,0,0,3,113x65,114,0,4}
-window	website	0	1	:*	c6a6,227x65,0,0,9
-state	website	thought
+pane	ai	0	:bash	1	:*	0	:/home/brandon/projects/sillybin/python3	1	bash	:
+pane	nasm	0	:bash	1	:*	0	:/home/brandon/projects/sillybin/nasm	1	emacs	:emacs -nw count.asm
+pane	nasm	0	:bash	1	:*	1	:/tmp	0	emacs	:emacs -nw foo.c
+pane	nasm	0	:bash	1	:*	2	:/tmp	0	emacs	:emacs -nw foo.s
+pane	nasm	0	:bash	1	:*	3	:/home/brandon/projects/sillybin/nasm	0	bash	:
+pane	reshade	0	:bash	1	:*	0	:/home/brandon/projects/thug-pro-reshade	0	emacs	:emacs -nw README.md
+pane	reshade	0	:bash	1	:*	1	:/home/brandon/projects/thug-pro-reshade	1	bash	:
+pane	schedule	0	:[tmux]	1	:*	0	:/home/brandon/projects/configurations	1	bash	:
+pane	thps	0	:emacs	1	:*	0	:/home/brandon/projects/thug-pro-level-changer	1	emacs	:emacs -nw -nw tests/
+pane	thps	0	:emacs	1	:*	1	:/home/brandon/projects/thug-pro-level-changer	0	bash	:
+pane	thug1	0	:emacs	1	:*	0	:/home/brandon/projects/thug	0	bash	:
+pane	thug1	0	:emacs	1	:*	1	:/home/brandon/projects/thug	1	emacs	:emacs -nw -nw Code/Sk/Components/SkaterCorePhysicsComponent.cpp
+pane	tricks	0	:bash	1	:*	0	:/home/brandon/projects/trickset	0	emacs	:emacs -nw -nw README.md
+pane	tricks	0	:bash	1	:*	1	:/home/brandon/projects/trickset	1	bash	:
+window	ai	0	1	:*	5997,133x70,0,0,18
+window	nasm	0	1	:*	aa26,271x71,0,0[271x43,0,0{135x43,0,0,1,135x43,136,0[135x20,136,0,16,135x22,136,21,17]},271x27,0,44,14]
+window	reshade	0	1	:*	9859,271x71,0,0{135x71,0,0,3,135x71,136,0,4}
+window	schedule	0	1	:*	b2c2,133x70,0,0,5
+window	thps	0	1	:*	1851,133x70,0,0{67x70,0,0,6,65x70,68,0,7}
+window	thug1	0	1	:*	f8cc,271x71,0,0[271x35,0,0,13,271x35,0,36,9]
+window	tricks	0	1	:*	abb8,133x70,0,0{66x70,0,0,10,66x70,67,0,11}
+state	ai	
