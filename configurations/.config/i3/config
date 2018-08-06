@@ -10,6 +10,7 @@ set $BASH_EXECUTABLES ~/.bash/executables
 
 # Programs
 bindsym $MOD+Return       exec termite
+bindsym $MOD+Shift+Return exec gnome-terminal
 
 bindsym $MOD+F1           exec nm-applet
 bindsym $MOD+F3           exec compton
