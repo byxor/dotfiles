@@ -69,7 +69,8 @@ for i in $(seq 10); do
     eval xte $(i3_move_window_to_workspace 6)
 done
 
-eval xte $(i3_open_terminal)
+nohup termite &
+sleep 2
 
 xte 'str cd ~/projects/go/src/github.com/byxor/qbd'
 xte 'key Return'
@@ -101,7 +102,10 @@ for i in $(seq 10); do
     eval xte $(i3_move_window_to_workspace 6)
 done
 
-firefox -new-instance 'http://localhost:8080'
+nohup firefox -new-instance 'http://localhost:8080' &
 sleep 6
 
 eval xte $(i3_goto_workspace 1)
+
+
+
