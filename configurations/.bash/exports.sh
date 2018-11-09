@@ -13,3 +13,9 @@ export PATH=$PATH:/usr/local/go/bin
 
 export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOPATH/bin
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
