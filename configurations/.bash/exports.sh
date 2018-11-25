@@ -8,6 +8,9 @@ export PATH=$PATH:$HOME/software/ripgrep-0.5.2-i686-unknown-linux-musl
 export PATH=$PATH:$HOME/software/javacc-6.0/bin/lib
 export PATH=$PATH:$HOME/software/gradle-4.3.1/bin
 export PATH=$PATH:$HOME/software/cmake-3.11.2-Linux-x86_64/bin
+export PATH=$PATH:$HOME/software/cmake-3.11.2-Linux-x86_64/bin
+export PATH=$PATH:$HOME/software/devkitadv/bin
+
 export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=$PATH:/usr/local/go/bin
 

@@ -1,0 +1,15 @@
+pane	0	0	:bash	0	:-	0	:/home/brandon/projects/Entua	1	bash	:
+pane	0	1	:bash	1	:*	0	:/home/brandon/projects/Entua	1	bash	:
+pane	1	0	:emacs	0	:-	0	:/home/brandon/projects/compilers	1	emacs	:emacs -nw .
+pane	1	1	:bash	1	:*	0	:/home/brandon/projects/compilers	1	bash	:
+pane	2	0	:bash	1	:*	0	:/home/brandon/projects/Entua	1	bash	:
+pane	2	1	:bash	0	:-	0	:/home/brandon/projects/Entua	1	bash	:
+pane	2	2	:goconvey	0	:	0	:/home/brandon/projects/Entua	1	goconvey	:goconvey
+window	0	0	0	:-	b2bd,114x32,0,0,0
+window	0	1	1	:*	a6a0,56x30,0,0,3
+window	1	0	0	:-	c382,144x36,0,0,5
+window	1	1	1	:*	bee3,47x36,0,0,6
+window	2	0	1	:*	cb44,199x56,0,0,7
+window	2	1	0	:-	cb45,199x56,0,0,8
+window	2	2	0	:	cb46,199x56,0,0,9
+state	2	
