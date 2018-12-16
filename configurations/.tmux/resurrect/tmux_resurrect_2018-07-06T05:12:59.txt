@@ -1,8 +1,0 @@
-pane	0	0	:bash	1	:*	0	:/home/brandon/projects/sillybin/go	0	emacs	:emacs -nw goroutines.go
-pane	0	0	:bash	1	:*	1	:/home/brandon/projects/sillybin/go	1	bash	:
-pane	1	0	:emacs	1	:*Z	0	:/home/brandon/projects/go/src/github.com/byxor/qbd	1	emacs	:emacs -nw .
-pane	1	0	:emacs	1	:*Z	1	:/home/brandon/projects/go/src/github.com/byxor/qbd	0	goconvey	:goconvey
-pane	1	0	:emacs	1	:*Z	2	:/home/brandon/projects/go/src/github.com/byxor/qbd	0	bash	:
-window	0	0	1	:*	f0d6,199x56,0,0{99x56,0,0,1,99x56,100,0,0}
-window	1	0	1	:*Z	123e,199x56,0,0[199x27,0,0,2,199x28,0,28{99x28,0,28,3,99x28,100,28,4}]
-state	1	

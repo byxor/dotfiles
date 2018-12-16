@@ -1,4 +1,0 @@
-pane	0	0	:emacs	1	:*	0	:/home/brandon/projects/go/src/github.com/byxor/hello	1	emacs	:emacs -nw hello.go
-pane	0	0	:emacs	1	:*	1	:/home/brandon/projects/go/src/github.com/byxor/hello	0	bash	:
-window	0	0	1	:*	1946,199x58,0,0[199x28,0,0,0,199x29,0,29,1]
-state	0	

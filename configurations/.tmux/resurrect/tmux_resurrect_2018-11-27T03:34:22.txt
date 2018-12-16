@@ -1,0 +1,9 @@
+pane	entua	0	:bash	1	:*	0	:/home/brandon/projects/Entua	1	bash	:
+pane	pda	0	:[tmux]	1	:*	0	:/home/brandon/projects/pda/python	1	emacs	:emacs -nw .
+pane	pda	1	:bash	0	:-	0	:/home/brandon/projects/pda/python	1	bash	:
+pane	vidsum	0	:emacs	1	:*	0	:/home/brandon	1	emacs	:emacs -nw /tmp/foo
+window	entua	0	1	:*	e5d1,199x56,0,0,22
+window	pda	0	1	:*	65d6,199x56,0,0,17
+window	pda	1	0	:-	6387,227x65,0,0,18
+window	vidsum	0	1	:*	dc40,93x25,0,0,21
+state	entua	
