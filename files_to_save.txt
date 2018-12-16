@@ -1,5 +1,5 @@
 # SOURCE                      DESTINATION (RELATIVE TO REPOSITORY)
-#-------------------------------------------------
+# ----------------------------------------------------------------
 ~/.bashrc                     .bashrc
 ~/.bash                       .bash
 ~/.tmux.conf                  .tmux.conf
