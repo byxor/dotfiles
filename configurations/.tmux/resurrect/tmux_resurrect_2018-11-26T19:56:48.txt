@@ -1,5 +1,0 @@
-pane	pda	0	:emacs	1	:*	0	:/home/brandon/projects/pda/python	1	emacs	:emacs -nw .
-pane	pda	1	:bash	0	:-	0	:/home/brandon/projects/pda/python	1	bash	:
-window	pda	0	1	:*	65d6,199x56,0,0,17
-window	pda	1	0	:-	6387,227x65,0,0,18
-state	pda	
