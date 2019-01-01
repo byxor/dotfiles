@@ -11,6 +11,8 @@ export PATH=$PATH:$HOME/software/cmake-3.11.2-Linux-x86_64/bin
 export PATH=$PATH:$HOME/software/cmake-3.11.2-Linux-x86_64/bin
 export PATH=$PATH:$HOME/software/devkitadv/bin
 export PATH=$PATH:$HOME/software/TACi
+export PATH=$PATH:$HOME/software/objconv/bin
+export PATH=$PATH:$HOME/software/Postman
 
 export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=$PATH:/usr/local/go/bin
