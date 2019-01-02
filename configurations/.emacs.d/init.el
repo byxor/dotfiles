@@ -1,5 +1,5 @@
 (defun relatively-import (file-name)
-  (absolutely-import (full-path-of file-name)))
+  (absolutely-import (full-path-of (concat "byxor/" file-name))))
 
 (defun full-path-of (file-name)
   (expand-file-name file-name (file-name-directory load-file-name)))
@@ -18,7 +18,11 @@
           "unsorted-functions.el"
           "autosave-changes.el"))
 
-;; Automated custom stuff
+
+;; =======================================
+;; EVERYTHING BELOW THIS LINE IS AUTOMATED
+;; =======================================
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
