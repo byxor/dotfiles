@@ -1,8 +1,6 @@
 ERROR_DIRECTORY=~/.debug_output
 
-
 mkdir ~/.debug_output &> /dev/null
-
 
 function debug {
     if ! [ -z "$1" ]

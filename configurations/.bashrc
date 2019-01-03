@@ -29,36 +29,20 @@ function import {
 }
 
 MODULES=(
-    prepare_executables
     defaults
-    exports
+
+    arista/index
+    desktop/index
+    emacs/index
+    executables/index
+    git/index
+    python/index
+    shell/index
+    tmux/index
+    warnings/index
+
     aliases
-    suppress_bell
-    reload_shell
-    debug_utils
-    string_utils
-    file_utils
-    default_text_editor
-    clipboard_utils
-    navigation_helpers
-    hard_reset
-    tmux_helpers
-    git_settings
-    git_helpers
-    git_shell_prompt
-    setup_emacs_backups
-    arista_helpers
-    sudo_warning
-    rm_warning
-    wallpaper
-    python_helpers
-    passflip_helpers
-    package_installation_helpers
-    compose_key
-    java_environment
-    repair
-    tmux_session
-    # tmux_colour_fix --- Seems to break with termite.
+    exports
 )
 
 echo "Loading .bashrc"
@@ -66,7 +50,3 @@ echo "---------------"
 import-multiple ${MODULES[@]}
 echo "---------------"
 echo "done."
-
-
-
-

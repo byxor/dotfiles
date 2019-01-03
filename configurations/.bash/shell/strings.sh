@@ -1,6 +1,5 @@
 function strip {
     local input=$1
-
     local output=$input
 
     # remove leading whitespace characters
