@@ -3,24 +3,20 @@
 (show-paren-mode 1)
 (global-linum-mode 1)
 
-
 ;; Buffer Switching
 (ido-mode 1)
-
 
 ;; Disable GUI menu/tool bars
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-
+(scroll-bar-mode -1)
 
 ;; Configure Whitespace/Indentation
 (electric-indent-mode 0)
 (setq typescript-indent-level 2)
 
-
 ;; File Extensions
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-
 
 ;; Go fmt
 (add-hook 'go-mode-hook
@@ -28,7 +24,6 @@
             (add-hook 'before-save-hook 'gofmt-before-save)
             (setq tab-width 4)
             (setq indent-tabs-mode 1)))
-
 
 ;; Misc
 (ac-config-default)
