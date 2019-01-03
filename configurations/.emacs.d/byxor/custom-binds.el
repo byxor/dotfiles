@@ -13,7 +13,7 @@
 (global-set-key (custom-shortcut "C-n C-h") 'neotree-hidden-file-toggle)
 (global-set-key (custom-shortcut "C-n C-r") 'neotree-change-root)
 
-(global-set-key (custom-shortcut "C-o") 'ace-window
+(global-set-key (custom-shortcut "C-o") 'ace-window)
 
 (global-set-key (custom-shortcut "C-s") 'sr-speedbar-toggle)
 (global-set-key (custom-shortcut "C-z") 'zoom-window-zoom)
