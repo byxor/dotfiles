@@ -40,6 +40,7 @@ MODULES=(
     shell/index
     tmux/index
     warnings/index
+    npm
 
     aliases
     exports
