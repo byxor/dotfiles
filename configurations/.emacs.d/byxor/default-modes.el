@@ -5,6 +5,7 @@
 
 ;; Buffer Switching
 (ido-mode 1)
+(persp-mode 1)
 
 ;; Disable GUI menu/tool bars
 (tool-bar-mode -1)

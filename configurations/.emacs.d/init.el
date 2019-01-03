@@ -12,8 +12,8 @@
 (mapcar 'relatively-import
         '("melpa-loader.el"
           "arista-loader.el"
-          "custom-binds.el"
           "default-modes.el"
+          "custom-binds.el"
           "disable-startup-message.el"
           "unsorted-functions.el"
           "autosave-changes.el"))
