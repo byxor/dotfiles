@@ -9,8 +9,11 @@
 (global-set-key (custom-shortcut "C-a") 'ace-window)
 (global-set-key (custom-shortcut "C-e") 'electric-indent-mode)
 (global-set-key (custom-shortcut "C-l") 'mc/edit-lines)
+
 (global-set-key (custom-shortcut "C-n C-n") 'neotree)
 (global-set-key (custom-shortcut "C-n C-h") 'neotree-hidden-file-toggle)
+(global-set-key (custom-shortcut "C-n C-r") 'neotree-change-root)
+
 (global-set-key (custom-shortcut "C-s") 'sr-speedbar-toggle)
 (global-set-key (custom-shortcut "C-z") 'zoom-window-zoom)
 
