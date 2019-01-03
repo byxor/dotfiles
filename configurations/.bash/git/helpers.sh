@@ -2,6 +2,10 @@ alias git-log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 
 git config --global alias.add-commit '!git add -A && git commit'
 
+function gcb() {
+    git clone "git@github.com:byxor/$1"
+}
+
 function lazygit() {
   git add .
   if git commit -a -m "$1"; then
