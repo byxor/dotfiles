@@ -9,8 +9,9 @@ set $BASH_EXECUTABLES ~/.bash/executables
 ### BASIC FEATURES AND SHORTCUTS###
 
 # Startup Programs
-exec --no-startup-id nm-applet --sm-disable
-exec --no-startup-id discord
+# exec --no-startup-id nm-applet --sm-disable
+# exec --no-startup-id discord
+exec --no-startup-id i3-battery-popup -n
 
 # Programs
 bindsym $MOD+Shift+Return exec gnome-terminal

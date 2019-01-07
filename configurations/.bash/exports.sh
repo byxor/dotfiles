@@ -17,7 +17,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Java
-export JDK_18="/usr/lib/jvm/java-8-openjdk-amd64"
+export JDK_18="/usr/lib/jvm/java-8-oracle"
 export JAVA_HOME=$JDK_18
+export PATH=$PATH:$JDK_18/bin
 export JDK_16=$JDK_18
 export JDK_17=$JDK_18

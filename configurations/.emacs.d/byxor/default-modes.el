@@ -15,6 +15,7 @@
 ;; Configure Whitespace/Indentation
 (electric-indent-mode 0)
 (setq typescript-indent-level 2)
+(setq kotlin-tab-width 4)
 
 ;; File Extensions
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))

@@ -51,3 +51,7 @@ echo "---------------"
 import-multiple ${MODULES[@]}
 echo "---------------"
 echo "done."
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/brandon/.sdkman"
+[[ -s "/home/brandon/.sdkman/bin/sdkman-init.sh" ]] && source "/home/brandon/.sdkman/bin/sdkman-init.sh"
