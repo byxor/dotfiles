@@ -8,6 +8,7 @@ export PATH=$PATH:/snap/bin
 # Golang
 export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
