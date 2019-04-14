@@ -23,3 +23,4 @@ export JAVA_HOME=$JDK_18
 export PATH=$PATH:$JDK_18/bin
 export JDK_16=$JDK_18
 export JDK_17=$JDK_18
+
