@@ -1,6 +1,7 @@
 */.emacs.d/server/
 */.emacs.d/url/
 */.emacs.d/ac-comphist.dat
+*/.emacs.d/persp-confs
 *auto-save-list*
 *.last
 *~
