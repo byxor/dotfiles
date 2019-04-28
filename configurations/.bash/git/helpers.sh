@@ -6,6 +6,10 @@ function gcb() {
     git clone "git@github.com:byxor/$1"
 }
 
+function gi() {
+    curl -sL https://www.gitignore.io/api/$@
+}
+
 function lazygit() {
   git add .
   if git commit -a -m "$1"; then
