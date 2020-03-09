@@ -10,6 +10,18 @@ function gi() {
     curl -sL https://www.gitignore.io/api/$@
 }
 
+function git-diff-origin() {
+    git-diff "origin/$(get_current_git_branch)"
+}
+
+function git-diff() {
+    git-diff-two HEAD $1
+}
+
+function git-diff-two() {
+    git diff-tree --color=always -p -r $2 $1 | less -r
+}
+
 function lazygit() {
   git add .
   if git commit -a -m "$1"; then
