@@ -4,5 +4,5 @@ if [ -n "${DISPLAY+x}" ]; then
 fi
 
 if [ "$(uname)" == "Darwin" ]; then
-    hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000003A}]}'
+    hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000003A}]}' > /dev/null 2>&1
 fi

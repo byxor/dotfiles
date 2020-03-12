@@ -1,4 +1,4 @@
-if [ "$(uname)" == "Darwin" ]; then
+if [ $OS = $OSX ]; then
   echo "On Mac; not exporting environment variables."
 else
   # Editors
