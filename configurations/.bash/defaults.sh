@@ -104,4 +104,9 @@ fi
 
 export OSX='osx'
 export LINUX='linux'
-export OS=$OSX
+
+if [ "$(uname)" == "Darwin" ]; then
+  export OS=$OSX
+else
+  export OS=$LINUX
+fi
