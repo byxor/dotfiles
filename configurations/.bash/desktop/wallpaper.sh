@@ -6,4 +6,6 @@ function wallpaper-random {
     feh --bg-fill $final_path
 }
 
-wallpaper-random
+if [ $OS = $LINUX ]; then
+    wallpaper-random
+fi

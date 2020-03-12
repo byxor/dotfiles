@@ -102,3 +102,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export OSX='osx'
+export LINUX='linux'
+export OS=$OSX
