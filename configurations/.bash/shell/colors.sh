@@ -1,4 +1,5 @@
 function colorgrid() {
+    # Credits: https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
     iter=16
     while [ $iter -lt 52 ]
     do
@@ -28,5 +29,4 @@ function colorgrid() {
         iter=$[$iter+1]
         printf '\r\n'
     done
-    # Taken from https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
 }
