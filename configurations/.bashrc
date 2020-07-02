@@ -41,6 +41,7 @@ MODULES=(
     tmux/index
     warnings/index
     npm
+    docker
 
     aliases
     exports
