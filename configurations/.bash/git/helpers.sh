@@ -22,6 +22,10 @@ function git-diff-2() {
     git diff-tree --color=always -p -r $2 $1 | less -r
 }
 
+function unfuck-git() {
+    trash-put .git/index.lock
+}
+
 function lazygit() {
   git add .
   if git commit -a -m "$1"; then

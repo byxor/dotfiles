@@ -36,6 +36,7 @@ MODULES=(
     emacs/index
     executables/index
     git/index
+    java/index
     python/index
     shell/index
     tmux/index
