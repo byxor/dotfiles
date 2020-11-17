@@ -110,3 +110,5 @@ if [ "$(uname)" == "Darwin" ]; then
 else
   export OS=$LINUX
 fi
+
+eval "$(thefuck --alias)"
