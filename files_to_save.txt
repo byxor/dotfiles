@@ -12,3 +12,5 @@
 ~/.setup                      .setup
 ~/Pictures/Wallpapers         Pictures/Wallpapers
 ~/.profile                    .profile
+~/.yabairc                    .yabairc
+~/.skhdrc                     .skhdrc
