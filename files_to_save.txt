@@ -9,6 +9,7 @@
 ~/.config/i3status            .config/i3status
 ~/.config/termite             .config/termite
 ~/.config/compton.conf        .config/compton.conf
+~/.config/nvim                .config/nvim
 ~/.setup                      .setup
 ~/Pictures/Wallpapers         Pictures/Wallpapers
 ~/.profile                    .profile
