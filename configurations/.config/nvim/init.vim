@@ -1,3 +1,9 @@
+" plugins
+call plug#begin()
+Plug 'tpope/vim-fugitive'
+call plug#end()
+
+" helper functions
 function Handle24BitColor()
     "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
     "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -17,8 +23,9 @@ function Handle24BitColor()
 endfunction
 
 
-" reload vimrc
+" reload/edit vimrc
 :command Reload :source ~/.config/nvim/init.vim
+:command EditVimrc :e ~/.config/nvim/init.vim
 
 " tabs and spaces
 set tabstop=4 shiftwidth=4 expandtab
@@ -45,14 +52,13 @@ map [t :tabprevious<CR>
 
 " path
 set path+=**
+set wildignore+=*/node_modules/*,*/target/*
 
 " file browser tweaks
 let g:netrw_banner=0
-let g:netrw_browse_split=4
+let g:netrw_browse_split=0
 let g:netrw_altv=1
 let g:netrw_liststyle=3
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 filetype plugin on " not sure what this does tbh
 
 " tab completion for files"
@@ -60,3 +66,11 @@ set wildmenu
 
 " ctag support
 command MakeTags !ctags -R .
+
+" fugitive git shortcuts
+nnoremap ,gg :Gvdiffsplit!<CR>
+nnoremap ,gu :diffupdate<CR>
+nnoremap ,gh :diffget //2<CR>:diffupdate<CR>
+nnoremap ,gj ]c 
+nnoremap ,gk [c 
+nnoremap ,gl :diffget //3<CR>:diffupdate<CR>
