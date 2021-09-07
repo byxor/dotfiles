@@ -1,8 +1,10 @@
 if [ $OS = $OSX ]; then
-  echo "On Mac; not exporting environment variables."
+  echo "On Mac; skipping most environment variables."
+  export EDITOR=nvim
 else
   # Editors
-  export EDITOR=emacs
+  # export EDITOR=emacs
+  export EDITOR=nvim
 
   # PATH
   export PATH=$PATH:$HOME/software/bin
