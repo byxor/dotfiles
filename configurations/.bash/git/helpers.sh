@@ -41,3 +41,11 @@ function lazygit() {
     esac
   fi
 }
+
+function git-copy-file-from-another-branch() {
+    local branch="$1"
+    local file="$2"
+    
+    mkdir -p $(dirname $file)
+    git show $branch:$file > $file
+}
