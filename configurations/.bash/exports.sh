@@ -1,6 +1,12 @@
 if [ $OS = $OSX ]; then
   echo "On Mac; skipping most environment variables."
+  
   export EDITOR=nvim
+
+  # Atlassian scripts for jira server
+  export ATLASSIAN_SCRIPTS=$HOME/projects/atlassian-scripts
+  source $ATLASSIAN_SCRIPTS/sourceme.sh
+  
 else
   # Editors
   # export EDITOR=emacs

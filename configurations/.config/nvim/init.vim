@@ -1,6 +1,13 @@
 " plugins
 call plug#begin()
 Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'alec-gibson/nvim-tetris'
+Plug 'johngrib/vim-game-snake'
+Plug 'seandewar/nvimesweeper'
 call plug#end()
 
 " helper functions
@@ -49,6 +56,7 @@ map ]b :bnext<CR>
 map [b :bprevious<CR>
 map ]t :tabnext<CR>
 map [t :tabprevious<CR>
+map ,q :bdelete<CR>
 
 " path
 set path+=**
@@ -74,3 +82,16 @@ nnoremap ,gh :diffget //2<CR>:diffupdate<CR>
 nnoremap ,gj ]c 
 nnoremap ,gk [c 
 nnoremap ,gl :diffget //3<CR>:diffupdate<CR>
+
+" intellij-like shortcuts for Ag/Rg and FZF"
+nnoremap ,F :Rg<CR>
+nnoremap ,f :Files<CR>
+nnoremap ,b :Buffers<CR>
+let g:fzf_preview_window = ['down:70%', 'ctrl-/']
+
+" fix annoying 'No save since last change' (or whatever) message
+set hidden
+
+" coffee script stuff, not sure what this does
+syntax enable
+filetype plugin indent on

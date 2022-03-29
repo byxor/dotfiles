@@ -57,3 +57,29 @@ echo "done."
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/brandon/.sdkman"
 [[ -s "/home/brandon/.sdkman/bin/sdkman-init.sh" ]] && source "/home/brandon/.sdkman/bin/sdkman-init.sh"
+
+# Atlassian security config
+shopt -s histappend
+export HISTFILESIZE=1048576
+export HISTSIZE=1048576
+export HISTTIMEFORMAT="%s "
+export PROMPT_COMMAND="history -a; history -c; history -r"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
+# pyenv might work now? https://github.com/pyenv/pyenv/issues/1740
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"

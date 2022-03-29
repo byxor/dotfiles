@@ -1,4 +1,4 @@
-git config --global push.default simple
+git config --global push.default current
 
 # Helper function; will probably be moved.
 function rot13() {
