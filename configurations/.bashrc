@@ -43,6 +43,7 @@ MODULES=(
     warnings/index
     npm
     docker
+    jira
 
     aliases
     exports

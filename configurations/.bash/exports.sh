@@ -7,6 +7,9 @@ if [ $OS = $OSX ]; then
   export ATLASSIAN_SCRIPTS=$HOME/projects/atlassian-scripts
   source $ATLASSIAN_SCRIPTS/sourceme.sh
   
+  # Postgres
+  export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+
 else
   # Editors
   # export EDITOR=emacs
@@ -34,4 +37,5 @@ else
   export PATH=$PATH:$JDK_18/bin
   export JDK_16=$JDK_18
   export JDK_17=$JDK_1
+
 fi
